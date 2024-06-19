@@ -1,0 +1,47 @@
+.signUp{
+     width: 80%;
+     form{
+          .input{
+               margin: 10px 0;
+               width: 100%;
+               label{
+                    color: #9146ff;
+               }
+               input{
+                    background-color: #f0f0ff;
+                    color: #000;
+                    border: 1px solid #9146ff;
+                    width: 100%;
+               }
+          }
+          button{
+               background-color: #9146ff;
+               color: #f0f0ff;
+               border: none;
+          }
+          button:hover{
+               border: 1px solid#9146ff;
+               color: #9146ff;
+          }
+     }
+}
+/* Small sceen media queary */
+@media (max-width: 768px){
+     .signUp{
+          .mb-3{
+               margin-bottom: 5px!important;
+          }
+          label{
+               font-size: .7rem;
+          }
+          .d-flex{
+               gap: 10px!important;
+          }
+          .down{
+               .create{
+                    font-size: .7rem;
+                    width: 40%;
+               }
+          }
+     }
+}
