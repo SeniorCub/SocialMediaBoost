@@ -1,0 +1,40 @@
+.container {
+     margin: auto;
+ }
+ h1, h2 {
+     color: #9146ff;
+     text-align: center;
+     margin: 20px 0;
+ }
+ h2 {
+     margin-top: 10px;
+     font-size: 1.5em;
+ }
+ .section {
+     margin: 10px 0;
+     padding: 20px;
+     background: #29292b;
+     border-radius: 10px;
+ }
+ .section ul {
+     padding-left: 20px;
+     list-style-type: disc;
+ }
+ .section ul li {
+     margin-bottom: 10px;
+ }
+ .icon {
+     color: #9146ff;
+     margin-right: 10px;
+ }
+ .contact-info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .contact-info p {
+     margin-bottom: 10px;
+ }
+ .contact-info p a {
+     color: #9146ff;
+ }
