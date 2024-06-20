@@ -24,103 +24,51 @@ nav{
      .active{
           color: #9146ff!important;
      }
-     .btn{
+     .login, .login:hover{
           border: 1px solid#9146ff;
-          a{
           color: #9146ff;
-          }
+     }
+     .sign, .sign:hover{
+          background-color: #9146ff;
+          color: #f0f0ff;
      }
      .btn:hover{
-          background-color: #9146ff;
-          a{
-          color: #f0f0ff;
-          }
+          transform: scale(0.9);
      }
 }
 #hero{
      height: 80vh!important;
-     margin-bottom: 50px;
-     padding-top: 30px;
-     .text{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          h1{
-               font-size: 2.5rem;
-               margin: 10px 0;
-               font-weight: 600;
-               color: #9146ff;
-          }
-          p{
-               font-size: 1rem;
-               margin: 10px 0;
-               span{
-                    font-weight: 800;
-               }
-          }
-          form{
-               width: 70%;
-               .input{
-                    position: relative;
+     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)),url(images/4.jpg);
+     background-size: cover;
+     background-position: top;
+     .container{
+          margin-bottom: 50px;
+          padding-top: 50px;
+          .text{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               h1{
+                    font-size: 2.5rem;
                     margin: 10px 0;
-                    width: 100%;
-                    border-radius: 50px;
-                    background-color: #f0f0ff;
-                    input{
-                         border-radius: 50px;
-                         background-color: transparent;
-                         border: none;
-                         outline: none;
-                         width: 100%;
-                         padding: 10px 30px;
-
-                    }
-                    label{
-                         position: absolute;
-                         top: 50%;
-                         left: 10px;
-                         transform: translateY(-50%);
-                         color: #9146ff;
-                    }
-                    .span{
-                         position: absolute;
-                         top: 75%;
-                         right: 10px;
-                         transform: translateY(-50%);
-                         color: #9146ff;
-                         cursor: pointer;
-                         font-size: small;
-                    }
+                    font-weight: 600;
+                    color: #9146ff;
                }
-               .moree{
-                    align-items: center;
-                    font-size: .7rem;
-                    .create{
-                         a{
-                              font-weight: 800;
-                         }
-                    }
-               }
-               .btn{
+               p{
+                    font-size: 1rem;
                     margin: 10px 0;
-                    background-color: #9146ff;
-                    color: #f0f0ff;
-                    border: none;
-                    padding: 10px 30px;
-                    border-radius: 50px;
-                    width: max-content;
-                    height: max-content;
-               }
-               .btn:hover{
-                    border: 1px solid#9146ff;
-                    color: #f0f0ff;
-               }
-          }    
-     }
-     img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+                    span{
+                         font-weight: 800;
+                    }
+               }   
+          }
+          img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               display: none;
+          }
      }
 }
 #services{
@@ -186,52 +134,58 @@ nav{
 #advert{
      height: 20vh;
      background-color: #9146ff;
-     border-radius: 250px;
-     z-index: 2;
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
-     padding: 0 50px;
-     margin-bottom: 50px;
-     .texdt{
-          font-size: 2.5rem;
-          font-weight: 800;
-          color: #f0f0ff;
-     }
-     .btn{
-          background-color: #f0f0ff;
-          color: #9146ff!important;
-          border: none;
-          padding: 20px 50px;
-          font-weight: 600;
-          border-radius: 50px;
+     .container{
+          border-radius: 250px;
+          z-index: 2;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .texdt{
+               font-size: 2.5rem;
+               font-weight: 800;
+               color: #f0f0ff;
+          }
+          .btn{
+               background-color: #f0f0ff;
+               color: #9146ff!important;
+               border: none;
+               padding: 20px 50px;
+               font-weight: 600;
+               border-radius: 50px;
+          }
      }
 }
 #social{
-     height: 20vh;
+      height: 20vh;
      background-color: #9146ff;
-     border-radius: 250px;
-     z-index: 2;
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
-     padding: 0 50px;
-     margin-bottom: 50px;
-     .texdt{
-          font-size: 2.5rem;
-          font-weight: 800;
-          color: #f0f0ff;
-     }
-     .btn{
-          border: none;
-          a{
-               font-size: 3rem;
-               font-weight: 900;
-               color: #f0f0ff!important;
+     .container{
+          border-radius: 250px;
+          z-index: 2;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .texdt{
+               font-size: 2.5rem;
+               font-weight: 800;
+               color: #f0f0ff;
           }
-     }
-     .btn:hover{
-          transform: scale(1.3);
+          .btn{
+               border: none;
+               a{
+                    font-size: 3rem;
+                    font-weight: 900;
+                    color: #f0f0ff!important;
+               }
+          }
+          .btn:hover{
+               transform: scale(1.3);
+          }
      }
 }
 #why{

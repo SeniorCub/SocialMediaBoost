@@ -1,0 +1,58 @@
+form{
+     width: 70%;
+     .input{
+          position: relative;
+          margin: 10px 0;
+          width: 100%;
+          border-radius: 50px;
+          background-color: #f0f0ff;
+          input{
+               border-radius: 50px;
+               background-color: transparent;
+               border: none;
+               outline: none;
+               width: 100%;
+               padding: 10px 30px;
+
+          }
+          label{
+               position: absolute;
+               top: 50%;
+               left: 10px;
+               transform: translateY(-50%);
+               color: #9146ff;
+          }
+          .span{
+               position: absolute;
+               top: 75%;
+               right: 10px;
+               transform: translateY(-50%);
+               color: #9146ff;
+               cursor: pointer;
+               font-size: small;
+          }
+     }
+     .moree{
+          align-items: center;
+          font-size: .7rem;
+          .create{
+               a{
+                    font-weight: 800;
+               }
+          }
+     }
+     .btn{
+          margin: 10px 0;
+          background-color: #9146ff;
+          color: #f0f0ff;
+          border: none;
+          padding: 10px 30px;
+          border-radius: 50px;
+          width: max-content;
+          height: max-content;
+     }
+     .btn:hover{
+          border: 1px solid#9146ff;
+          color: #f0f0ff;
+     }
+} 
