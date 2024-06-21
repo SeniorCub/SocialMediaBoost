@@ -7,6 +7,8 @@
 }
 body{
      background: #000;
+     width: 100vw!important;
+     overflow-x: hidden;
      color: #f0f0ff;
 }
 ::-webkit-scrollbar{
@@ -47,6 +49,10 @@ nav{
      }
      .btn:hover{
           transform: scale(0.9);
+     }
+     .navbar-toggler{
+          border: none;
+          color: #9146ff!important;
      }
 }
 #hero{
@@ -501,12 +507,19 @@ footer{
      }
 }
 @media (max-width: 768px){
+     .navbar-collapse {
+          position: absolute;
+          top: 10vh;
+     }
+     .container{
+          max-width: 100vw!important;
+     }
      #hero{
           position: relative;
-          .text{
+               .text{
+               width: 100vw;
                height: 80vh;
                padding: 0 10px;
-               background: radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
                h1{
                     font-size: 2rem!important;
                }
@@ -522,16 +535,373 @@ footer{
                width: 100%!important;
           }
      }
-     #advert{
-          padding: 0 30px;
-          margin-top: 50px;
-          height: 10vh;
-          .texdt{
+    #services{
+          .img{
+               display: none;
+          }
+          .textss{
+               h1{
+                    font-size: 2rem;
+               }
+               h6{
+                    font-size: 1.5rem;
+               }
+               .service{
+                    .item{
+                         .icon{
+                              font-size: 2.5rem;
+                         }
+                         .text{
+                              font-size: 1.2rem;
+                         }
+                    }
+               }
+          }
+     }
+     #social{
+          .container{
+               .text-content{
+                    width: 100%;
+               }
+               .support-description {
+                    width: 80%;
+               }
+               .contact-info{
+                    width: 100%;
+               }
+          }
+     }
+     #why{
+          .reasons{
+               grid-template-columns: 1fr;
+               .reason{
+                    margin: 0 auto;
+                    .imag{
+                         font-size: 2rem;
+                    }
+                    .topic{
+                         font-size: 1.5rem;
+                    }
+                    .text{
+                         font-size: 1rem;
+                    }
+               }
+          }
+     }
+     #faqs{
+          .btn-outline-light{
+               padding: 10px 20px;
                font-size: 1rem;
           }
-          .btn{
-               padding: 5px 10px;
-               font-size: 0.5rem;
+     }
+     #testimonials{
+          .testimonial-card{
+               padding: 10px;
+          }
+          .testimonial-card .quote{
+               font-size: 1rem;
+          }
+          .testimonial-card .author{
+               font-size: 1rem;
+          }
+          .testimonial-card .position{
+               font-size: 0.8rem;
+          }
+     }
+     footer{
+          #footer{
+               grid-template-columns: repeat(2, 1fr);
+               .one{
+                    .navbar-brand{
+                         font-size: 1.5rem;
+                         img{
+                              width: 40px;
+                              height: 40px;
+                         }
+                    }
+                    .story{
+                         font-size: 0.5rem;
+                    }
+               }
+               .two{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    font-size: 1rem;
+               }
+               .three, .four{
+                    h1{
+                         font-size: 0.7rem;
+                    }
+                    .links{
+                         a{
+                              font-size: 0.5rem;
+                         }
+                    }
+               }
+          }
+          .subscribe-forms{
+               h1{
+                    font-size: 1rem;
+    }
+}
+     }
+}
+@media (max-width: 480px){
+     #hero{
+          .text{
+               h1{
+                    font-size: 1.5rem!important;
+               }
+               p{
+                    font-size: 0.8rem!important;
+               }
+          }
+     }
+     #services{
+          .textss{
+               h1{
+                    font-size: 1.5rem;
+               }
+               h6{
+                    font-size: 1.2rem;
+               }
+               .service{
+                    .item{
+                         .icon{
+                              font-size: 2rem;
+                         }
+                         .text{
+                              font-size: 1rem;
+                         }
+                    }
+               }
+          }
+     }
+     #social{
+          width: 100vw!important;
+          .container{
+               .text-content{
+                    width: 100%;
+               }
+               .support-description {
+                    width: 100%;
+               }
+               .contact-info{
+                    width: 100%;
+               }
+          }
+     }
+     #why{
+          .reasons{
+               grid-template-columns: 1fr;
+               .reason{
+                    margin: 0 auto;
+                    .imag{
+                         font-size: 1.5rem;
+                    }
+                    .topic{
+                         font-size: 1.2rem;
+                    }
+                    .text{
+                         font-size: 0.8rem;
+                    }
+               }
+          }
+     }
+     #faqs{
+          .btn-outline-light{
+               padding: 10px 20px;
+               font-size: 1rem;
+          }
+     }
+     #testimonials{
+          .testimonial-card{
+               padding: 10px;
+          }
+          .testimonial-card .quote{
+               font-size: 1rem;
+          }
+          .testimonial-card .author{
+               font-size: 1rem;
+          }
+          .testimonial-card .position{
+               font-size: 0.8rem;
+          }
+     }
+     footer{
+          #footer{
+               grid-template-columns: repeat(1, 1fr);
+               .one{
+                    .navbar-brand{
+                         font-size: 1.5rem;
+                         img{
+                              width: 40px;
+                              height: 40px;
+                         }
+                    }
+                    .story{
+                         font-size: 0.5rem;
+                    }
+               }
+               .two{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    font-size: 1rem;
+               }
+               .three, .four{
+                    h1{
+                         font-size: 0.
+}
+               }
+          }
+     }
+     .service {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr)!important;
+          row-gap: 10px;
+          column-gap: 10px;
+     }
+     .item {
+          width: 50%;
+          .icon {
+              font-size: 3rem;
+              width: 100%!important;
+              height: 70px!important;
+              }}
+}
+@media (max-width: 350px){
+     .container{
+          padding: 10vw 10vw!important;
+     }
+     #hero{
+          .text{
+               h1{
+                    width: 100%!important;
+                    font-size: 1.2rem!important;
+               }
+               p{
+                    font-size: 0.7rem!important;
+                    width: 100%!important;
+               }
+          }
+     }
+     #services{
+          .textss{
+               h1{
+                    font-size: 1.2rem;
+               }
+               h6{
+                    font-size: 1rem;
+               }
+               .service{
+                    .item{
+                         .icon{
+                              font-size: 1.5rem;
+                         }
+                         .text{
+                              font-size: 0.8rem;
+                         }
+                    }
+               }
+          }
+     }
+     #social{
+          width: 100vw!important;
+          .container{
+               .text-content{
+                    width: 100%;
+                    font-size: 0.7rem!important;
+               }
+               .support-description {
+                    width: 100%;
+               }
+               .contact-info{
+                    width: 100%;
+               }
+          }
+     }
+     #why{
+          h1{
+               font-size: 1.2rem!important;
+          }
+          .reasons{
+               grid-template-columns: 1fr;
+               .reason{
+                    margin: 0 auto;
+                    .imag{
+                         font-size: 1.2rem;
+                    }
+                    .topic{
+                         font-size: 1rem;
+                    }
+                    .text{
+                         font-size: 0.7rem;
+                    }
+               }
+          }
+     }
+     #faqs{
+          h1{
+               font-size: 1.2rem!important;
+          }
+          .btn-outline-light{
+               padding: 10px 20px;
+               font-size: 1rem;
+          }
+          .accordion-item{
+               font-size: 0.7rem!important;
+          }
+     }
+     #testimonials{
+          h1{
+               font-size: 1.2rem!important;
+          }
+          .testimonial-card{
+               padding: 10px;
+          }
+          .testimonial-card .quote{
+               font-size: 0.7rem;
+          }
+          .testimonial-card .author{
+               font-size: 1rem;
+          }
+          .testimonial-card .position{
+               font-size: 0.8rem;
+          }
+     }
+     footer{
+          #footer{
+               grid-template-columns: repeat(1, 1fr);
+               .one{
+                    .navbar-brand{
+                         font-size: 1.5rem;
+                         img{
+                              width: 40px;
+                              height: 40px;
+                         }
+                    }
+                    .story{
+                         font-size: 0.5rem;
+                    }
+               }
+               .two{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    font-size: 1rem;
+               }
+               .three, .four{
+                    h1{
+                         font-size: 0.7rem;
+                    }
+                    .links{
+                         a{
+                              font-size: 0.5rem;
+                         }
+                    }
+               }
           }
      }
 }
