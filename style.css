@@ -5,18 +5,24 @@
      box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
 }
+:root{
+     --primary-color: #9146ff;
+     --secondary-color: #f0f0ff;
+     --dark-color: #333;
+     --black: #000;
+}
 body{
-     background: #000;
+     background: var(--black);
      width: 100vw!important;
      overflow-x: hidden;
-     color: #f0f0ff;
+     color: var(--secondary-color);
 }
 ::-webkit-scrollbar{
      display: none;
 }
 a{
      text-decoration: none;
-     color: #9146ff;
+     color: var(--primary-color);
 }
 nav{
      background-color: transparent;
@@ -24,35 +30,35 @@ nav{
           padding: 1vw 5vw;
      }
      .navbar-brand{
-          color: #9146ff;
+          color: var(--primary-color);
           font-weight: 800;
      }
      .nav-link{
-          color: #f0f0ff;
+          color: var(--secondary-color);
      }
      .nav-link:hover{
-          color: #9146ff;
+          color: var(--primary-color);
      }
      .active{
-          color: #9146ff!important;
+          color: var(--primary-color)!important;
      }
      .btn{
           border-radius: 60px;
      }
      .login, .login:hover{
           border: none;
-          color: #9146ff;
+          color: var(--primary-color);
      }
      .sign, .sign:hover{
-          background-color: #9146ff;
-          color: #f0f0ff;
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
      }
      .btn:hover{
           transform: scale(0.9);
      }
      .navbar-toggler{
           border: none;
-          color: #9146ff!important;
+          color: var(--primary-color)!important;
      }
 }
 #hero{
@@ -73,7 +79,7 @@ nav{
                     margin: 10px 0;
                     font-weight: 600;
                     line-height: 1;
-                    color: #9146ff;
+                    color: var(--primary-color);
                }
                p{
                     font-size: 1rem;
@@ -91,10 +97,10 @@ nav{
           }
           .swipe {
                position: relative;
-               background-color: #f0f0ff;
+               background-color: var(--secondary-color);
                width: 200px;
                height: 60px;
-               color: #9146ff;
+               color: var(--primary-color);
                border-radius: 60px;
                display: flex;
                justify-content: center;
@@ -111,7 +117,7 @@ nav{
              .swipe:hover {
                padding-left: 0;
                padding-right: 40px;
-               color: #9146ff;
+               color: var(--primary-color);
              }
              
              .containerr {
@@ -119,18 +125,18 @@ nav{
                left: 5px;
                width: 50px;
                height: 50px;
-               background: #9146ff;
+               background: var(--primary-color);
                border-radius: 50%;
                transition: 0.35s ease;
                display: flex;
                justify-content: center;
                align-items: center;
-               color: #f0f0ff;
+               color: var(--secondary-color);
              }
              
              .swipe:hover .containerr {
                left: calc(100% - 55px);
-               color: #f0f0ff;
+               color: var(--secondary-color);
              }
      }
 }
@@ -173,7 +179,7 @@ nav{
                     align-items: center;
                     .icon{
                          font-size: 3.5rem;
-                         color: #f0f0ff;
+                         color: var(--secondary-color);
                          display: flex;
                          justify-content: center;
                          align-items: center;
@@ -212,7 +218,7 @@ nav{
                     .text{
                          margin: 10px 0;
                          font-size: 1.5rem;
-                         color: #f0f0ff;                    
+                         color: var(--secondary-color);                    
                     }
                }
           }
@@ -231,21 +237,21 @@ nav{
 }
 #social {
      padding: 10vw 0;
-     background-color: #000;
+     background-color: var(--black);
      display: flex;
      justify-content: center;
      align-items: center;
      .container {
           border-radius: 25px;
           padding: 2rem;
-          box-shadow: 0px 0px 10px #000;
-          background-color: #9146ff;
+          box-shadow: 0px 0px 10px var(--black);
+          background-color: var(--primary-color);
           -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
           display: flex;
           flex-direction: column;
           align-items: center;
-          color: #f0f0ff;
+          color: var(--secondary-color);
           text-align: center;
      }
      .text-content {
@@ -272,7 +278,7 @@ nav{
      .btn {
           font-size: 1.5rem;
           font-weight: 900;
-          color: #f0f0ff !important;
+          color: var(--secondary-color) !important;
           display: flex;
           align-items: center;
           gap: 0.5rem;
@@ -303,7 +309,7 @@ nav{
 #why{
      padding: 10vw 0;
      h1{
-          color: #9146ff;
+          color: var(--primary-color);
           font-size: 3rem;
           text-align: center;
           margin-bottom: 50px;
@@ -323,7 +329,7 @@ nav{
                     font-size: 3rem;
                }
                .topic{
-                    color: #9146ff;
+                    color: var(--primary-color);
                     font-size: 1.5rem;
                }
                .text{
@@ -333,12 +339,12 @@ nav{
      }
 }
 .bg-dark{
-     background-color: #333!important;
+     background-color: var(--dark-color)!important;
 }
 #faqs{
      padding: 10vw 0;
      h1{
-          color: #9146ff;
+          color: var(--primary-color);
           font-size: 3rem;
           text-align: center;
           margin-bottom: 50px;
@@ -348,27 +354,27 @@ nav{
           margin: 5px 0;
      }
      .accordion-button {
-          background: #333;
+          background: var(--dark-color);
           border: none!important;
-          color: #f0f0ff;
+          color: var(--secondary-color);
      }
      .accordion-button:not(.collapsed) {
-          color: #f0f0ff;
-          background-color: #9146ff;
+          color: var(--secondary-color);
+          background-color: var(--primary-color);
      }
      .accordion-button::after {
           filter: invert(1);
      }
      .accordion-body {
           border: none!important;
-          background: #000;
-          color: #f0f0ff;
+          background: var(--black);
+          color: var(--secondary-color);
      }
      .btn-outline-light{
           padding: 20px 30px;
           border-radius: 60px;
-          color: #000;
-          background-color: #f0f0ff;
+          color: var(--black);
+          background-color: var(--secondary-color);
           border: none;
      }
 }
@@ -401,7 +407,7 @@ nav{
      }  
 }
 footer{
-     border-top: 2px solid #9146ff;
+     border-top: 2px solid var(--primary-color);
      padding: 10vw 0;
      padding-bottom: 0;
      #footer{
@@ -413,7 +419,7 @@ footer{
                .navbar-brand{
                     font-size: 2rem;
                     font-weight: 800;
-                    color: #9146ff;
+                    color: var(--primary-color);
                     img{
                          width: 50px;
                          height: 50px;
@@ -424,7 +430,7 @@ footer{
                .story{
                     font-size: 0.7rem;
                     margin: 10px 0;
-                    color: #f0f0ff;
+                    color: var(--secondary-color);
                }
           }
           .two{
@@ -434,7 +440,7 @@ footer{
                gap: 20px ; 
           }
           i{
-               color: #f0f0ff;
+               color: var(--secondary-color);
                margin-right: 10px;
           }
           .three, .four{
@@ -443,7 +449,7 @@ footer{
                gap: 20px ; 
                h1{
                     font-size: 1.5rem;
-                    color: #f0f0ff;
+                    color: var(--secondary-color);
                }
                .links{
                     display: flex;
@@ -451,7 +457,7 @@ footer{
                     gap: 10px;
                     a{
                          font-size: 0.7rem;
-                         color: #9146ff;
+                         color: var(--primary-color);
                     }
                
                }
@@ -461,7 +467,7 @@ footer{
           float: right;
           h1{
                font-size: 1.5rem;
-               color: #f0f0ff;
+               color: var(--secondary-color);
           }
           .subscribe-form {
                display: flex;
@@ -478,18 +484,18 @@ footer{
                     border-radius: 5px 0 0 5px;
                     font-size: 15px;
                     font-weight: 500;
-                    color: #f0f0ff;
+                    color: var(--secondary-color);
                     background: transparent;
                }        
                .subscribe-btn {
                     width: 100px;
                     height: 100%;
                     border-radius: 0 5px 5px 0;
-                    background-color: #9146ff;
+                    background-color: var(--primary-color);
                     font-size: 15px;
                     letter-spacing: 1px;
                     font-weight: 500;
-                    color: #f0f0ff;
+                    color: var(--secondary-color);
                     cursor: pointer;
                }
                .subscribe-input:focus {
@@ -499,14 +505,14 @@ footer{
           }
      }
      .copy{
-          background-color: #9146ff;
+          background-color: var(--primary-color);
           text-align: center;
-          color: #f0f0ff;
+          color: var(--secondary-color);
           font-size: 15px;
           margin-top: 80px;
      }
 }
-@media (max-width: 768px){
+@media (max-width: 800px){
      .navbar-collapse {
           position: absolute;
           top: 10vh;
@@ -606,6 +612,10 @@ footer{
           }
           .testimonial-card .position{
                font-size: 0.8rem;
+          }
+          .row{      
+               flex-wrap: wrap;
+               justify-content: center;
           }
      }
      footer{
