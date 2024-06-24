@@ -89,12 +89,6 @@ nav{
                     }
                }   
           }
-          img{
-               width: 100%;
-               height: 100%;
-               object-fit: cover;
-               display: none;
-          }
           .swipe {
                position: relative;
                background-color: var(--secondary-color);
@@ -543,13 +537,15 @@ footer{
      }
     #services{
           .img{
-               display: none;
+               display: none!important;
           }
           .textss{
                h1{
+                    margin-left: 20px;
                     font-size: 2rem;
                }
                h6{
+                    margin-left: 20px;
                     font-size: 1.5rem;
                }
                .service{
@@ -565,6 +561,7 @@ footer{
           }
      }
      #social{
+          width: 100vw;
           .container{
                .text-content{
                     width: 100%;
@@ -653,6 +650,68 @@ footer{
           .subscribe-forms{
                h1{
                     font-size: 1rem;
+               }
+          }
+     }
+}
+@media (max-width: 450px){
+     .service{
+          grid-template-columns: repeat(2, 1fr)!important;
+     }
+     #why{
+          width: 90vw;
+     }
+}
+@media (max-width: 350px){
+     #hero{
+          .text{
+               width: 100%!important;
+               p{
+                    width: 100%!important;
+                    font-size: 0.7rem;
+               }
+          }
+     }
+     .img{
+          display: none!important;
+     }
+     #social {
+          .title {
+               font-size: 2rem;
+          }
+          .support-description {
+              font-size: 1rem;
+              width: 100%!important;
+          }
+     }
+     section h1{
+          font-size: 2rem!important;
+     }
+     #footer{
+          grid-template-columns: 1fr!important;
+          .one{
+               .navbar-brand{
+                    font-size: 1rem;
+                    img{
+                         width: 30px;
+                         height: 30px;
+                    }
+               }
+               .story{
+                    font-size: 0.5rem;
+               }
+          }
+          .two{
+               font-size: 0.8rem;
+          }
+          .three, .four{
+               h1{
+                    font-size: 0.5rem;
+               }
+               .links{
+                    a{
+                         font-size: 0.3rem;
+                    }
                }
           }
      }
