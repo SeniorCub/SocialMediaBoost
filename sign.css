@@ -72,6 +72,11 @@
           }
      }
 }
+.back-icon{
+     position: absolute;
+     top: 10px;
+     left: 20px;
+}
 /* Small sceen media queary */
 @media (max-width: 768px){
      .signUp{

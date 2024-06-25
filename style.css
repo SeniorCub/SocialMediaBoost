@@ -401,44 +401,42 @@ nav{
      }  
 }
 footer{
-     border-top: 2px solid var(--primary-color);
      padding: 5vw 0;
+     padding-bottom: 0;
+     background-color: #111;
+     a{
+          color: #cccccc;
+     }
      #footer{
           display: grid;
-          grid-template-columns: 0.5fr 2fr 0.5fr;
+          grid-template-columns: repeat(4, 1fr);
           gap: 50px;
+          padding-bottom: 5vw;
           .one{
                .navbar-brand{
                     font-size: 1.5rem;
                }
                .links{
                     i{
-                         font-size: 1rem;
+                         font-size: 1.5rem;
                     }
                }
           }
-          .middle{
-               .two, .three{
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    flex-direction: column;
+          .two, .three{
+               display: flex;
+               justify-content: center;
+               gap: 20px;
+               flex-direction: column;
+               .head{
+                    color: #666;
+                    font-weight: 500;
+               }
+               .linkss{
                     a{
+                         color: #cccccc;
                          font-size: 1rem;
-                         position: relative;
-                    }
-                    a:before{
-                         content: '';
-                         width: 0%;
-                         height: 2px;
-                         position: absolute;
-                         bottom: -2px;
-                         border-radius: 100px;
-                    }
-                    a:hover:before{
-                         background-color: var(--primary-color);
-                         width: 100%;
-                         transition: all 1s;
+                         word-spacing: -1px;
+                         margin-bottom: 5px;
                     }
                }
           }
@@ -447,17 +445,19 @@ footer{
           h1{
                font-size: 0.7rem;
                color: var(--secondary-color);
+               margin-bottom: 20px;
           }
           .subscribe-form {
                display: flex;
-               flex-direction: row;
+               flex-direction: column;
+               gap: 10px;
                width: 300px;
                height: 35px;
                border-radius: 5px;
                .subscribe-input {
                     width: 100%;
                     height: 100%;
-                    padding: 5px 10px;
+                    padding: 5px 5px;
                     border-right: 0;
                     font-size: 15px;
                     border-top: 0;
@@ -467,21 +467,30 @@ footer{
                     background: transparent;
                }        
                .subscribe-btn {
-                    width: 100px;
-                    height: 100%;
-                    border-radius: 0 5px 5px 0;
+                    width: max-content;
+                    height: max-content;
                     background-color: var(--primary-color);
-                    font-size: 15px;
-                    letter-spacing: 1px;
+                    font-size: 0.7rem;
+                    border: none;
+                    padding: 7px 40px;
                     font-weight: 500;
                     color: var(--secondary-color);
                     cursor: pointer;
                }
                .subscribe-input:focus {
                     outline: none;
-                    border-right: 0;
                }
           }
+     }
+     .last{
+          margin-top: 20px;
+          padding: 20px 5vw;
+          border-top: 1px solid #333;
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          gap: 20px;
+          font-size: 0.7rem;
+          text-align: center;
      }
 }
 @media (max-width: 800px){
