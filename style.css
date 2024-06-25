@@ -80,11 +80,12 @@ nav{
                     margin: 10px 0;
                     font-weight: 600;
                     line-height: 1;
-                    color: var(--primary-color);
+                    color: #ccc;
                }
                p{
                     font-size: 1rem;
                     width: 70%;
+                    color: #777;
                     span{
                          font-weight: 800;
                     }
@@ -239,7 +240,7 @@ nav{
           border-radius: 25px;
           padding: 2rem;
           box-shadow: 0px 0px 10px var(--black);
-          background-color: var(--primary-color);
+          background-color: #0000ff77;
           -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
           display: flex;
@@ -272,12 +273,12 @@ nav{
      .btn {
           font-size: 1.5rem;
           font-weight: 900;
-          color: var(--secondary-color) !important;
+          background-color: var(--secondary-color) !important;
           display: flex;
           align-items: center;
           gap: 0.5rem;
           text-decoration: none;
-          background-color: #25d366; /* WhatsApp green color */
+          color: #25d366; /* WhatsApp green color */
           padding: 0.75rem 1.5rem;
           border-radius: 5px;
           transition: transform 0.3s, background-color 0.3s;
@@ -303,7 +304,7 @@ nav{
 #why{
      padding: 10vw 0;
      h1{
-          color: var(--primary-color);
+          color: #ccc;
           font-size: 3rem;
           text-align: center;
           margin-bottom: 50px;
@@ -337,8 +338,8 @@ nav{
 }
 #faqs{
      padding: 10vw 0;
-     h1{
-          color: var(--primary-color);
+     h1{                    
+          color: #ccc;
           font-size: 3rem;
           text-align: center;
           margin-bottom: 50px;
@@ -375,7 +376,7 @@ nav{
 #testimonials{
      padding: 10vw 0;
      h1{
-          color: var(--primary-color);
+          color: #ccc;
           font-size: 3rem;
           text-align: center;
           margin-bottom: 100px;
