@@ -21,19 +21,19 @@
                justify-content: center;
                padding: 2rem;
                border-radius: 10px;
-               box-shadow: 0px 0px 10px #000;
+               box-shadow: 0px 0px 10px var(--black);
                width: 70%;
                -webkit-backdrop-filter: blur(10px);
                backdrop-filter: blur(10px);
                h1{
                     font-size: 3rem;
                     font-weight: 800;
-                    color: #9146ff;
+                    color: var(--primary-color);
                }
                p{
                     font-size: 1.5rem;
                     font-weight: 600;
-                    color: #f0f0ff;
+                    color: var(--secondary-color);
                }
           }
      }
@@ -48,7 +48,7 @@
                margin: 10px 0;
                width: 100%;
                label{
-                    color: #9146ff;
+                    color: var(--primary-color);
                     margin-bottom: -5px;
                }
                input{
@@ -57,18 +57,18 @@
                     outline: none;
                     width: 100%;
                     background-color: rgba(240, 240, 255, 0.6);
-                    color: #000;
+                    color: var(--black);
                }
           }
           button{
                padding: 10px 20px;
-               background-color: #9146ff;
-               color: #f0f0ff;
+               background-color: var(--primary-color);
+               color: var(--secondary-color);
                border: none;
           }
           button:hover{
-               border: 1px solid#9146ff;
-               color: #9146ff;
+               border: 1px solidvar(--primary-color);
+               color: var(--primary-color);
           }
      }
 }

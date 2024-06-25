@@ -29,7 +29,7 @@
                p{
                     font-size: 1.5rem;
                     font-weight: 600;
-                    color: #9146ff;
+                    color: var(--primary-color);
                }
           }
           form{
@@ -38,13 +38,13 @@
                     position: relative;
                     margin: 10px 0;
                     width: 100%;
-                    border-bottom: 3px solid #f0f0ff;
+                    border-bottom: 3px solid var(--secondary-color);
                     input{
                          background-color: transparent;
                          border: none;
                          outline: none;
                          width: 100%;
-                         color: #f0f0ff;
+                         color: var(--secondary-color);
                          padding: 10px 35px;
                     }
                     label{
@@ -52,14 +52,14 @@
                          top: 50%;
                          left: 10px;
                          transform: translateY(-50%);
-                         color: #9146ff;
+                         color: var(--primary-color);
                     }
                     .span{
                          position: absolute;
                          top: 75%;
                          right: 10px;
                          transform: translateY(-50%);
-                         color: #9146ff;
+                         color: var(--primary-color);
                          cursor: pointer;
                          font-size: small;
                     }
@@ -75,8 +75,8 @@
                }
                .btn{
                     margin: 10px 0;
-                    background-color: #9146ff;
-                    color: #f0f0ff;
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
                     border: none;
                     padding: 10px 30px;
                     border-radius: 50px;
@@ -84,8 +84,8 @@
                     height: max-content;
                }
                .btn:hover{
-                    border: 1px solid#9146ff;
-                    color: #f0f0ff;
+                    border: 1px solidvar(--primary-color);
+                    color: var(--secondary-color);
                }
           } 
      }
