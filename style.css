@@ -27,7 +27,7 @@ nav{
           padding: 1vw 5vw;
      }
      .navbar-brand{
-          width: 50px;
+          width: 70px;
           img{
                width: 100%;
                height: 100%;
@@ -44,11 +44,11 @@ nav{
           color: var(--primary-color)!important;
      }
      .btn{
-          border-radius: 60px;
+          border-radius: 25px;
      }
      .login, .login:hover{
           border: none;
-          color: var(--primary-color);
+          color: #eee;
      }
      .sign, .sign:hover{
           background-color: var(--primary-color);
@@ -96,8 +96,8 @@ nav{
                background-color: var(--secondary-color);
                width: 200px;
                height: 60px;
-               color: var(--primary-color);
-               border-radius: 60px;
+               color: var(--black);
+               border-radius: 25px;
                display: flex;
                justify-content: center;
                align-items: center;
@@ -113,7 +113,7 @@ nav{
              .swipe:hover {
                padding-left: 0;
                padding-right: 40px;
-               color: var(--primary-color);
+               color: var(--black);
              }
              
              .containerr {
@@ -142,11 +142,12 @@ nav{
           display: flex;
           flex-direction: column;
           justify-content: center;
-          height: 500px;
+          border-radius: 25px!important;
           img{
                width: 100%;
+               border-radius: 25px!important;
                height: 100%;
-               object-fit: contain;
+               object-fit: cover;
           }
      }
      .textss{
@@ -162,6 +163,7 @@ nav{
                font-size: 2.5rem;
                margin-left: 15px;
                margin-top: 60px;
+               font-weight: 200;
           }
           .service{
                display: grid;
@@ -180,8 +182,8 @@ nav{
                          align-items: center;
                          width: 100%;
                          height: 150px;
-
                          .fa, .fab{
+                              border-radius: 25px!important;
                               display: flex;
                               justify-content: center;
                               align-items: center;
@@ -212,10 +214,59 @@ nav{
                     }
                     .text{
                          margin: 10px 0;
-                         font-size: 1.5rem;
-                         color: var(--secondary-color);                    
+                         font-size: 1rem;
+                         color: #ccc;                    
                     }
                }
+          }
+     }
+}
+#product-features{
+     padding: 10vw 0;
+     h1{
+          color: #ccc;
+          font-size: 3rem;
+          text-align: center;
+          margin-bottom: 50px;
+     }
+     .feature-box{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .feature-image{
+               width: 100%;
+               height: 200px;
+          }
+          .feature-title{
+               color: var(--primary-color);
+               font-size: 1.5rem;
+          }
+          .feature-discription{
+               font-size: 1rem;
+               color: #ccc;
+          }
+     }
+}
+#how-it-works{
+     padding: 10vw 0;
+     h1{
+          color: #ccc;
+          font-size: 3rem;
+          text-align: center;
+          margin-bottom: 50px;
+     }
+     .col-md-6{
+          margin-bottom: 30px;
+          h3{
+               color: #0000ffee;
+               font-size: 2rem;
+               margin-bottom: 20px;
+          }
+          p{
+               font-size: 1rem;
+               color: #ccc;
           }
      }
 }
@@ -240,9 +291,7 @@ nav{
           border-radius: 25px;
           padding: 2rem;
           box-shadow: 0px 0px 10px var(--black);
-          background-color: #0000ff77;
-          -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+          background-color: #242424;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -272,15 +321,15 @@ nav{
      } 
      .btn {
           font-size: 1.5rem;
+          border-radius: 25px;
           font-weight: 900;
-          background-color: var(--secondary-color) !important;
+          background-color: #fff!important;
           display: flex;
           align-items: center;
           gap: 0.5rem;
           text-decoration: none;
           color: #25d366; /* WhatsApp green color */
           padding: 0.75rem 1.5rem;
-          border-radius: 5px;
           transition: transform 0.3s, background-color 0.3s;
      i {
           font-size: 2rem;
@@ -338,12 +387,21 @@ nav{
 }
 #faqs{
      padding: 10vw 0;
-     h1{                    
+     .text{
+          text-align: left!important;
           color: #ccc;
-          font-size: 3rem;
-          text-align: center;
-          margin-bottom: 50px;
-     }
+          h1{                    
+               text-align: left!important;
+               color: #ccc;
+               font-size: 3rem;
+               text-align: center;
+               margin-bottom: 30px;
+          }
+          p{
+               font-size: 1rem;
+               width: 80%;
+          }
+     }     
      .accordion-item{
           border: none!important;
           margin: 5px 0;
@@ -366,10 +424,9 @@ nav{
           color: var(--secondary-color);
      }
      .btn-outline-light{
-          padding: 20px 30px;
-          border-radius: 60px;
-          color: var(--black);
-          background-color: var(--secondary-color);
+          border-radius: 25px;
+          float: right;
+          color: var(--primary-color);
           border: none;
      }
 }
@@ -384,7 +441,7 @@ nav{
      .testimonial-card {
           background-color: var(--dark-color);
           padding: 20px;
-          border-radius: 8px;
+          border-radius: 25px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      }
      .testimonial-card .quote {
@@ -454,7 +511,6 @@ footer{
                gap: 10px;
                width: 300px;
                height: 35px;
-               border-radius: 5px;
                .subscribe-input {
                     width: 100%;
                     height: 100%;
@@ -474,6 +530,7 @@ footer{
                     font-size: 0.7rem;
                     border: none;
                     padding: 7px 40px;
+                    border-radius: 25px;
                     font-weight: 500;
                     color: var(--secondary-color);
                     cursor: pointer;
@@ -643,11 +700,96 @@ footer{
      }
 }
 @media (max-width: 450px){
+     #hero{
+          height: max-content!important;
+          .text {
+               height: 75vh!important;
+               h1{
+                    font-size: 1.5rem!important;
+               }
+               p{
+                    font-size: 0.8rem!important;
+                    width: 90%;
+               }
+          }
+     }
      .service{
           grid-template-columns: repeat(2, 1fr)!important;
+          row-gap: 0!important;
+          .item{
+               height: 80%!important;
+          }
+          .fa, .fab {
+               /* height: 60%!important; */
+               width: 80%!important;
+          }
+          .text{
+               margin: 0!important;
+          }
      }
      #why{
           width: 90vw;
+     }
+     .col-6{
+          width: 100%;
+     }
+     #faqs{
+          .text{
+               h1{
+                    text-align: center!important;
+               }
+               p{
+                    width: 100%!important;
+               }
+               .btn-outline-light{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+               }
+          }
+     }
+     footer{
+          #footer{
+               grid-template-columns: 1fr!important;
+               .one{
+                    .navbar-brand{
+                         font-size: 1.5rem;
+                         img{
+                              width: 40px;
+                              height: 40px;
+                         }
+                    }
+                    .story{
+                         font-size: 0.5rem;
+                    }
+               }
+               .two{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    font-size: 1rem;
+               }
+               .three, .four{
+                    h1{
+                         font-size: 0.7rem;
+                    }
+                    .links{
+                         a{
+                              font-size: 0.5rem;
+                         }
+                    }
+               }
+          }
+          .subscribe-forms{
+               h1{
+                    font-size: 1rem;
+               }
+          }
+          .last{
+               margin-top: 50px;
+               font-size: 0.5rem;
+               width: 100vw;
+               grid-template-columns: repeat(4,1fr);
+          }
      }
 }
 @media (max-width: 350px){
