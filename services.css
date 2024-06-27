@@ -1,3 +1,9 @@
+:root{
+     --primary-colo: #eee;
+     --secondary-color: #bbb;
+     --dark-color: #222;
+     --black: #000;
+}
 nav{
 .container {
      padding: 0px;
@@ -18,14 +24,13 @@ p {
      width: 70%;
  }
  h2 {
-     color: var(--primary-color);
+     color: var(--primary-colo);
      text-align: center;
      margin-bottom: 20px;
  }
  .service-card {
      background: var(--dark-color);
-     border: 2px solid var(--primary-color);
-     border-radius: 8px;
+     border-radius: 25px;
      padding: 20px;
      margin: 50px 0;
  h3 {
@@ -73,3 +78,8 @@ p {
  .modal-footer {
      border-top: 1px solid var(--primary-color);
  }
+@media (max-width: 800px){
+     p{
+          width: 100%;
+     }
+}
