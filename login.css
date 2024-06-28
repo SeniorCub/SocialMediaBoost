@@ -12,7 +12,7 @@
      }
      .side{
           border-radius: 20px;
-          background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(images/3.jpg);
+          background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images/3.jpg);
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -26,40 +26,4 @@
 position: absolute;
 top: 10px;
 left: 20px;
-}
-@media (max-width: 800px){
-     .signUp{
-          .side{
-               height: 50vh;
-               .text{
-                    h1{
-                         font-size: 2rem;
-                    }
-                    p{
-                         font-size: 1rem;
-                    }
-               }
-          }
-          .form{
-               height: max-content;
-          }
-          form{
-               width: 100%;
-          }
-          .mb-3{
-               margin-bottom: 5px!important;
-          }
-          label{
-               font-size: .7rem;
-          }
-          .d-flex{
-               gap: 10px!important;
-          }
-          .down{
-               .create{
-                    font-size: .7rem;
-                    width: 40%;
-               }
-          }
-     }
 }

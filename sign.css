@@ -6,9 +6,9 @@
      }
      .side{
           border-radius: 20px;
-          background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(images/5.jpg);
+          background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images/5.jpg);
           background-size: cover;
-          background-repeat: no-repeat;
+          background-repeat: no-repeat; 
           background-position: center;
           display: flex;
           justify-content: center;
@@ -20,12 +20,28 @@
                flex-direction: column;
                justify-content: center;
                padding: 2rem;
-               border-radius: 25px;
-               box-shadow: 0px 0px 10px var(--black);
-               width: 70%;
-               height: 49vh;
-               -webkit-backdrop-filter: blur(10px);
-               backdrop-filter: blur(10px);
+               width: 80%;
+               font-size: 1.5rem;
+               font-weight: 600;
+               color: var(--secondary-color);
+               span{
+                    color: var(--primary-color);
+               }
+          }
+     }
+     .form{
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: column;
+          .text{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               text-align: left;
+               margin-left: 100px;
+               margin-bottom: 30px;
                h1{
                     font-size: 3rem;
                     font-weight: 800;
@@ -38,21 +54,15 @@
                }
           }
      }
-     .form{
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-     }
      form{
-          padding: 30px;
+          padding: 0 30px;
           width: 80%;
           margin: 0 auto;
           .input{
                margin: 10px 0;
                width: 100%;
                label{
-                    color: var(--primary-color);
+                    color: #fff;
                     margin-bottom: 5px;
                }
                input{
@@ -64,6 +74,9 @@
                     color: #fff;
                }
           }
+          .create{
+               font-size: 0.7rem;
+          }
           button{
                padding: 10px 20px;
                background-color: var(--primary-color);
@@ -74,6 +87,9 @@
                border: 1px solid var(--primary-color);
                color: var(--primary-color);
           }
+          #name{
+               margin-top: 0;
+          }
      }
 }
 .back-icon{
@@ -83,6 +99,9 @@
 }
 /* Small sceen media queary */
 @media (max-width: 800px){
+     .side{
+          display: none!important;
+     }
      .signUp{
           .side{
                height: 50vh;
@@ -114,4 +133,7 @@
                }
           }
      }
+}
+@media (max-width: 450px){
+     
 }
