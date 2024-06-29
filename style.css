@@ -364,14 +364,14 @@ nav{
      .reasons{
           display: grid;
           grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+          justify-content: center;
           gap: 50px;
           margin: 0 auto;
           .reason{
                display: flex;
                flex-direction: column;
-               justify-content: center;
                align-items: center;
-               /* text-align: center; */
                .imag{
                     font-size: 3rem;
                     margin-bottom: 20px;
