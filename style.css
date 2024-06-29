@@ -434,6 +434,11 @@ nav{
           color: var(--primary-color);
           border: none;
      }
+     .btn-outline-light:hover{
+          background-color: transparent;
+          color: var(--secondary-color);
+          transform: scale(0.9);
+     }
 }
 #testimonials{
      padding: 10vw 0;
