@@ -24,10 +24,10 @@ a{
 nav{
      background-color: transparent;
      .container-fluid{
-          padding: 1vw 5vw;
+          padding: 0 5vw;
      }
      .navbar-brand{
-          width: 70px;
+          width: 100px;
           img{
                width: 100%;
                height: 100%;
@@ -484,27 +484,27 @@ footer{
                .navbar-brand{
                     font-size: 1.5rem;
                }
-               .links{
-                    i{
-                         font-size: 1.5rem;
-                    }
+               .story{
+                    font-size: 0.7rem;
                }
           }
           .two, .three{
                display: flex;
-               justify-content: center;
                gap: 20px;
                flex-direction: column;
                .head{
                     color: #666;
                     font-weight: 500;
                }
-               .linkss{
+               .links{
                     a{
                          color: #cccccc;
                          font-size: 1rem;
                          word-spacing: -1px;
                          margin-bottom: 5px;
+                         display: flex;
+                         align-items: center;
+                         gap: 10px;
                     }
                }
           }
@@ -554,9 +554,6 @@ footer{
           margin-top: 20px;
           padding: 20px 5vw;
           border-top: 1px solid #333;
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          gap: 20px;
           font-size: 0.7rem;
           text-align: center;
      }
@@ -564,6 +561,8 @@ footer{
 @media (max-width: 800px){
      .container{
           max-width: 100vw!important;
+          width: 100vw !important;
+          overflow: hidden;
      }
      .navbar-collapse{
           background-color: #333;
@@ -571,7 +570,7 @@ footer{
           left: 0;
           padding: 30px;
           position: absolute;
-          top: 15vh;
+          top: 10vh;
           z-index: 100;
      }
      #hero{
@@ -705,6 +704,18 @@ footer{
                }
           }
      }
+     #how-it-works{
+          .row{
+               width: 95%;
+               margin: 0 auto;
+          }
+     }
+     #why{
+          .reasons{
+               width: 90%;
+               margin: 0 auto;
+          }
+     }
 }
 @media (max-width: 450px){
      #hero{
@@ -735,17 +746,12 @@ footer{
                margin: 0!important;
           }
      }
-     #product-features{
-          margin-left: 10px;
-     }
-     #how-it-works{
-          .row{
-               margin-left: 10px;
+     #product-features {
+          text-align: center;
+          h1{
+               font-size: 2rem!important;
           }
-     }
-     #why{
-          width: 90vw;
-     }
+      }
      .col-6{
           width: 100%;
      }

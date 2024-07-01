@@ -134,13 +134,13 @@
           }
      }
 }
-@media (max-width: 450px){
+@media (max-width: 800px){
      .form{
           .text{
                text-align: right!important;
-               margin-left: auto;
+               margin-left: auto!important;
                margin-bottom: 30px;
-               margin-right: 30px;
+               margin-right: 50px;
                h1{
                     font-size: 3rem!important;
                }
