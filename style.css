@@ -240,13 +240,14 @@ nav{
                height: 200px;
           }
           .feature-title{
-               color: var(--primary-color);
+               color: #f0f0ff;
+               font-weight: 600;
                font-size: 1.5rem;
           }
-          .feature-discription{
+          .feature-description{
                font-size: 1rem;
                text-align: left;
-               color: #ccc;
+               color: #aaa!important;
           }
      }
 }
@@ -261,7 +262,8 @@ nav{
      .col-md-6{
           margin-bottom: 30px;
           h3{
-               color: #0000ffee;
+               color: #f0f0ff;
+               font-weight: 600;
                font-size: 2rem;
                margin-bottom: 20px;
           }
@@ -377,11 +379,13 @@ nav{
                     margin-bottom: 20px;
                }
                .topic{
-                    color: var(--primary-color);
+                    color: #f0f0ff;
+                    font-weight: 700;
                     margin-bottom: 10px;
                     font-size: 1.5rem;
                }
                .text{
+                    color: #ccc;
                     font-size: 1rem;
                }
           }
@@ -462,7 +466,7 @@ nav{
      .testimonial-card .author {
           font-weight: bold;
           margin-bottom: 5px;
-          color: var(--primary-color);
+          color: #000086;
      }
      .testimonial-card .position {
           font-size: 14px;
