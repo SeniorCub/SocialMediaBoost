@@ -3,6 +3,9 @@ body{
      overflow: hidden;
      display: grid;
      grid-template-columns: 0.5fr 2fr;
+     background: #242424;
+     width: 100vw!important;
+     overflow-x: hidden;
 }
 img{
      width: 100%;
@@ -13,6 +16,7 @@ img{
      width: 15rem;
      background-color: #777;
      height: 100vh;
+     padding-left: 1rem;
      .sidebar-wrapper{
           height: 100%;
           display: flex;
@@ -63,6 +67,7 @@ img{
                          background-color: #555;
                     }
                     i{
+                         padding-left: 1rem;
                          font-size: 1.2rem;
                     }
                     span{
@@ -98,44 +103,130 @@ img{
 .main{
      width: 100%;
      padding: 1rem 2rem;
+     .section{
+          display: none;
+     }
 }
-#transaction{
-     .header{
-          padding: 1rem;
-          #balance{
-               font-weight: 700;
-               font-size: 2rem;
-               color: #fff;
+.header{
+     padding: 1rem 0;
+     #balance{
+          font-weight: 700;
+          font-size: 2rem;
+          color: #fff;
+     }
+     .buttons{
+          display: flex;
+          gap: 10px;
+          button{
+               background-color: #ddd;
+               border: none;
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               font-size: 1rem;
           }
-          .buttons{
-               display: flex;
-               gap: 10px;
-               button{
-                    background-color: #ddd;
-                    border: none;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    font-size: 1rem;
-               }
-               button:hover{
-                    background-color: #0000ff;
-                    color: #ddd;
-               }
+          button:hover{
+               background-color: #0000ff;
+               color: #ddd;
           }
      }
+}
+#transactions{
      .head{
-          font-weight: 700;
+          /* font-weight: 700; */
           font-size: 1.5rem;
           color: #aaa;
      }
      .transact{
+          background-color: #777;
+          width: 100%;
+          border-radius: 10px;
+          padding: 0.5rem;
           .heading{
               .text{
                     font-weight: 700;
                     font-size: 1rem;
                     color: #ddd;
-              } 
+              }
+               input{
+                    background-color: transparent;
+               }
+               input:focus{
+                    box-shadow: none;
+                    outline: none;
+               }
+              .btn{
+                    background-color: #fff;
+                    color: #222;
+               }
+               .btn:hover{
+                    background-color: #fff;
+                    color: #222;
+               }
+          }
+          .datalist{
+               .each{
+                    padding: 0.5rem 1rem;
+                    text-align: center;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    color: #222;
+                    .icon{
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 50%;
+                         background-color: #ddd;
+                    }
+                    .trans-time{
+                         font-size: 0.7rem;
+                    }
+               }
+          }
+     }
+}
+#deposit{
+     form{
+          /* background-color: #0000ff; */
+          padding: 2rem 5rem;
+          /* padding-top: 5rem; */
+          border-radius: 10px;
+          .inputs{
+               margin-bottom: 3rem;
+               label{
+                    font-size: 1.2rem;
+                    color: #ddd;
+                    font-weight: 600;
+               }
+               input, select{
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #ddd;
+                    color: black;
+                    box-shadow: none;
+                    margin-top: 0.5rem;
+               }
+               select{
+                    text-indent: 10px;
+               }
+               input:focus, select:focus{
+                    box-shadow: none;
+                    outline: none;
+               }
+          }
+          .btn{
+               background-color: #0000ff;
+               color: #ddd;
+               float: right;
+               padding: 1rem 2rem;
+               border: none;
+               border-radius: 10px;
+               font-size: 1.2rem;
+               font-weight: 600;
+               cursor: pointer;
           }
      }
 }
