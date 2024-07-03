@@ -36,3 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
           allLinks[1].classList.add("active");
      }
 });
+
+let label = document.querySelector("#upload");
+let icon = document.querySelector(".icon");
+let input = document.querySelector("#file");
+label.addEventListener("click",()=>{
+     input.click();
+})
+icon.addEventListener("click",()=>{
+     input.click();
+})

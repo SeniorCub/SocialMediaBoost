@@ -230,3 +230,170 @@ img{
           }
      }
 }
+#profile{
+     header{
+          padding: 1rem 5rem;
+          padding-bottom: 0;
+          .ison{
+               background-color: #0000ff;
+               padding: 0 0.15rem;
+               border-radius: 10px;
+          }
+          .head{
+               display: flex;
+               gap: 10px;
+               font-size: 2rem;
+               color: #555;
+          }
+     }
+     form{
+          padding: 2rem 5rem;
+          .left{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               gap: 20px;
+               .prfi{
+                    width: 350px;
+                    height: 350px;
+                    position: relative;
+                    border-radius: 10px;
+                    img{
+                         width: 100%;
+                         border-radius: 10px;
+                         height: 100%;
+                         object-fit: cover;
+                    }
+                    .icon{
+                         font-size: 1.5rem;
+                         position: absolute;
+                         top: 0.5rem;
+                         left: 1rem;
+                         color: #0000ff;
+                         cursor: pointer;
+                    }
+               }
+               label{
+                    background-color: transparent;
+                    color: #ddd;
+                    padding: 0.5rem 2rem;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    border: dashed 1px #0000ff;
+                    cursor: pointer;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+               }
+               input[type="file"] {
+                    display: none; /* Hide file input field */
+               }
+          }
+          .right{
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               .inputs{
+                    label{
+                         font-size: 1.2rem;
+                         color: #ddd;
+                         font-weight: 600;
+                    }
+                    input{
+                         width: 100%;
+                         border-radius: 10px;
+                         border: none;
+                         background-color: #ddd;
+                         color: black;
+                         box-shadow: none;
+                    }
+                    input:focus{
+                         box-shadow: none;
+                         outline: none;
+                    }
+               }
+               .buttons{
+                    display: flex;
+                    gap: 10px;
+                    .btn{
+                         background-color: #0000ff;
+                         color: #ddd;
+                         float: right;
+                         width: 50%;
+                         border: none;
+                         border-radius: 10px;
+                         font-size: 1.2rem;
+                         font-weight: 600;
+                         cursor: pointer;
+                    }
+                    #save{
+                         background-color: #0000ff;
+                         color: #ddd;
+                    }
+                    #cancel{
+                         background-color: transparent;
+                         color: #ddd;
+                         border: 1px solid #0000ff;
+                    }
+               }
+          }
+     }
+}
+#orders{
+     .head{
+          /* font-weight: 700; */
+          font-size: 1.5rem;
+          color: #aaa;
+     }
+     .transact{
+          background-color: #777;
+          width: 100%;
+          border-radius: 10px;
+          padding: 0.5rem;
+          .heading{
+              .text{
+                    font-weight: 700;
+                    font-size: 1rem;
+                    color: #ddd;
+              }
+               input{
+                    background-color: transparent;
+               }
+               input:focus{
+                    box-shadow: none;
+                    outline: none;
+               }
+              .btn{
+                    background-color: #fff;
+                    color: #222;
+               }
+               .btn:hover{
+                    background-color: #fff;
+                    color: #222;
+               }
+          }
+          .datalists{
+               .each{
+                    padding: 0.5rem 1rem;
+                    text-align: center;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    color: #222;
+                    .icon{
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 50%;
+                         background-color: #ddd;
+                    }
+                    .trans-time{
+                         font-size: 0.7rem;
+                    }
+               }
+          }
+     }
+}

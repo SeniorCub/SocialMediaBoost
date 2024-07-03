@@ -78,9 +78,116 @@
 
 
      <section class="main">
-          
-          <section id="profile" class="section profile">Profile Content</section>
-          <section id="orders" class="section orders">Orders Content</section>
+     
+          <section id="profile" class="section profile">
+               <header>
+                    <div class="head"><span class="ison"></span>Edit Profile</div>
+               </header>
+               <form action="" class="row">
+                    <div class="col-lg-6 left">
+                         <div class="prfi"><div class="icon"><i class="fa fa-camera" aria-hidden="true"></i></div><img src="images/4-min.jpg" alt="profile"></div>
+                         <div class="uplos">
+                              <input type="file" id="file" name="profile" id="profile" class="form-control">
+                              <label for="profile" id="upload" class="form-label"><i class="fa fa-upload" aria-hidden="true"></i>Upload Profile</label>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 right">
+                         <div class="inputs">
+                              <label for="name" class="form-label">Username</label>
+                              <input type="text" class="form-control" id="userName" name="userName" value="SeniorCub">
+                         </div>
+                         <div class="inputs">
+                              <label for="name" class="form-label">Full Name</label>
+                              <input type="text" disabled class="form-control" id="name" name="name" value="First and Last Name">
+                         </div>
+                         <div class="inputs">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" name="email" value="example@mail.com">
+                         </div>
+                         <div class="inputs">
+                              <label for="phone" class="form-label">Phone Number</label>
+                              <input type="tel" class="form-control" id="phone" name="phone" value="1234567890">
+                         </div>
+                         <div class="buttons">
+                              <button type="submit" class="btn" id="save">Save</button>
+                              <button type="button" class="btn" id="cancel">Cancel</button>
+                         </div>
+                    </div>
+               </form>
+          </section>
+
+          <section id="orders" class="section orders">
+               <div class="d-flex justify-content-between header">
+                    <div class="balaces">
+                         <div id="balance">#230,630.50</div>
+                    </div>
+                    <div class="buttons">
+                         <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                         <button type="button" class="refresh"><i class="fa fa-refresh"></i></button>
+                         <button type="button" class="left"><i class="fa fa-arrow-left"></i></button>
+                         <button type="button" class="right"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+               </div>
+               <div class="head my-2">Orders</div>
+               <div class="transact">
+                    <div class="d-flex justify-content-between align-items-center my-2 heading">
+                         <div class="text">All orders</div>
+                         <div class="options">
+                              <div class="input-group">
+                                   <input type="text" class="form-control" id="searchOrders" placeholder="Search">
+                                   <button class="btn btn-outline-secondary" type="button" id="searchOrderss"><i class="fa fa-search"></i></button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="mt-3 datalists">
+                         <div class="row each">
+                              <div class="col-lg-6 d-flex align-items-center gap-2">
+                                   <div class="icon"></div>
+                                   <div class="trans-type">instagram</div>
+                              </div>
+                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
+                                   <div class="trans-amount">-20,000</div>
+                              </div>
+                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
+                                   <div class="d-flex align-items-center gap-3">
+                                        <div class="trans-date">15 Jan 2024</div>
+                                        <div class="trans-time">15:26</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="row each">
+                              <div class="col-lg-6 d-flex align-items-center gap-2">
+                                   <div class="icon"></div>
+                                   <div class="trans-type">instagram</div>
+                              </div>
+                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
+                                   <div class="trans-amount">-20,000</div>
+                              </div>
+                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
+                                   <div class="d-flex align-items-center gap-3">
+                                        <div class="trans-date">15 Jan 2024</div>
+                                        <div class="trans-time">15:26</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="row each">
+                              <div class="col-lg-6 d-flex align-items-center gap-2">
+                                   <div class="icon"></div>
+                                   <div class="trans-type">instagram</div>
+                              </div>
+                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
+                                   <div class="trans-amount">-20,000</div>
+                              </div>
+                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
+                                   <div class="d-flex align-items-center gap-3">
+                                        <div class="trans-date">15 Jan 2024</div>
+                                        <div class="trans-time">15:26</div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
 
           <section id="deposit" class="section deposit">
                <div class="d-flex justify-content-between header">
@@ -184,6 +291,7 @@
                     </div>
                </div>
           </div>
+     
      </section>
 
     
