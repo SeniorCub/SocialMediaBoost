@@ -21,6 +21,7 @@ a{
      text-decoration: none;
      color: var(--primary-color);
 }
+
 nav{
      background-color: transparent;
      .container-fluid{

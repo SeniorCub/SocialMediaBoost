@@ -46,3 +46,43 @@ label.addEventListener("click",()=>{
 icon.addEventListener("click",()=>{
      input.click();
 })
+document.querySelector(".service").addEventListener("click",()=>{
+     window.location="/services.html"
+})
+document.querySelector("#addOrder").addEventListener("click",()=>{
+     window.location="/services.html"
+})
+document.querySelectorAll(".home").forEach((ele)=>{
+     ele.addEventListener("click",()=>{
+          window.location="/"
+     });
+})
+document.querySelector("#refresh").addEventListener("click",()=>{
+     window.location.reload();
+     // Refresh API
+});
+document.querySelector("#refreshOrder").addEventListener("click",()=>{
+     window.location.reload();
+     // Refresh API
+});
+document.querySelector("#add").addEventListener("click",()=>{
+     document.querySelector(".section").style.display="none";
+     document.querySelector("#transactions").style.display="none";
+     document.querySelector("#deposit").style.display="block";
+     // Remove active from transaction and add to deposit link
+     document.querySelector(".transaction").classList.remove("active");
+     document.querySelector(".deposit").classList.add("active");
+});
+document.querySelector("#save").addEventListener("click",()=>{
+     document.querySelector("#alerting").innerHTML=`
+          <div class="alert alert-success d-flex align-items-center" role="alert">
+               <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
+               <div>
+               Profile Saved Successfully
+               </div>
+          </div>
+     `;
+     setTimeout(()=>{
+          document.querySelector("#alerting").innerHTML="";
+     },5000)
+})

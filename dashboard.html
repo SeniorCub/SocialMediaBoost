@@ -29,7 +29,7 @@
                </div>
                <div class="sidebar-links">
                     <div class="sidebar-link">
-                         <a href="#home" class="link">
+                         <a href="/" class="home link">
                               <i class="fas fa-house"></i>
                               <span>Home</span>
                          </a>
@@ -41,13 +41,13 @@
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="/services.html" class="link">
+                         <a href="/services.html" class="service link">
                               <i class="fas fa-clipboard"></i>
                               <span>Services</span>
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#transactions" class="link">
+                         <a href="#transactions" class="transaction link">
                               <i class="fas fa-exchange-alt"></i>
                               <span>Transactions</span>
                          </a>
@@ -59,7 +59,7 @@
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#deposit" class="link">
+                         <a href="#deposit" class="deposit link">
                               <i class="fas fa-wallet"></i>
                               <span>Deposit</span>
                          </a>
@@ -109,7 +109,7 @@
                               <input type="tel" class="form-control" id="phone" name="phone" value="1234567890">
                          </div>
                          <div class="buttons">
-                              <button type="submit" class="btn" id="save">Save</button>
+                              <button type="button" class="btn" id="save">Save</button>
                               <button type="button" class="btn" id="cancel">Cancel</button>
                          </div>
                     </div>
@@ -117,13 +117,29 @@
           </section>
 
           <section id="orders" class="section orders">
+               <div class="sidebar-top profiish">
+                    <div class="divpro">
+                         <div class="profile">
+                              <img src="images/4.jpg" alt="logo">
+                         </div>
+                         <div class="profile-name">
+                              <div class="name">Denis Kelvin</div>
+                              <div class="email">example@mail.com</div>
+                         </div>
+                    </div>
+                    <div class="logouts">
+                         <a href="login.html" class="logoutss">
+                              <i class="fas fa-sign-out-alt"></i>
+                         </a>
+                    </div>
+               </div>
                <div class="d-flex justify-content-between header">
                     <div class="balaces">
                          <div id="balance">#230,630.50</div>
                     </div>
                     <div class="buttons">
-                         <button type="button" class="add"><i class="fa fa-plus"></i></button>
-                         <button type="button" class="refresh"><i class="fa fa-refresh"></i></button>
+                         <button type="button" class="add" id="addOrder"><i class="fa fa-plus"></i></button>
+                         <button type="button" class="refresh" id="refreshOrder"><i class="fa fa-refresh"></i></button>
                          <button type="button" class="left"><i class="fa fa-arrow-left"></i></button>
                          <button type="button" class="right"><i class="fa fa-arrow-right"></i></button>
                     </div>
@@ -141,44 +157,14 @@
                     </div>
                     <div class="mt-3 datalists">
                          <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
+                              <div class="col-lg-6 col-md-4 d-flex align-items-center gap-2">
                                    <div class="icon"></div>
                                    <div class="trans-type">instagram</div>
                               </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
+                              <div class="col-lg-3 col-md-3 text-center mx-auto d-flex justify-content-center align-items-center">
                                    <div class="trans-amount">-20,000</div>
                               </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
-                                   <div class="d-flex align-items-center gap-3">
-                                        <div class="trans-date">15 Jan 2024</div>
-                                        <div class="trans-time">15:26</div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
-                                   <div class="icon"></div>
-                                   <div class="trans-type">instagram</div>
-                              </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
-                                   <div class="trans-amount">-20,000</div>
-                              </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
-                                   <div class="d-flex align-items-center gap-3">
-                                        <div class="trans-date">15 Jan 2024</div>
-                                        <div class="trans-time">15:26</div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
-                                   <div class="icon"></div>
-                                   <div class="trans-type">instagram</div>
-                              </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
-                                   <div class="trans-amount">-20,000</div>
-                              </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
+                              <div class="col-lg-3 col-md-5 ms-auto d-flex justify-content-end align-items-center">
                                    <div class="d-flex align-items-center gap-3">
                                         <div class="trans-date">15 Jan 2024</div>
                                         <div class="trans-time">15:26</div>
@@ -190,6 +176,22 @@
           </section>
 
           <section id="deposit" class="section deposit">
+               <div class="sidebar-top profiish">
+                    <div class="divpro">
+                         <div class="profile">
+                              <img src="images/4.jpg" alt="logo">
+                         </div>
+                         <div class="profile-name">
+                              <div class="name">Denis Kelvin</div>
+                              <div class="email">example@mail.com</div>
+                         </div>
+                    </div>
+                    <div class="logouts">
+                         <a href="login.html" class="logoutss">
+                              <i class="fas fa-sign-out-alt"></i>
+                         </a>
+                    </div>
+               </div>
                <div class="d-flex justify-content-between header">
                     <div class="balaces">
                          <div id="balance">#230,630.50</div>
@@ -220,13 +222,29 @@
           </section>
 
           <div class="section transactions" id="transactions">
+               <div class="sidebar-top profiish">
+                    <div class="divpro">
+                         <div class="profile">
+                              <img src="images/4.jpg" alt="logo">
+                         </div>
+                         <div class="profile-name">
+                              <div class="name">Denis Kelvin</div>
+                              <div class="email">example@mail.com</div>
+                         </div>
+                    </div>
+                    <div class="logouts">
+                         <a href="login.html" class="logoutss">
+                              <i class="fas fa-sign-out-alt"></i>
+                         </a>
+                    </div>
+               </div>
                <div class="d-flex justify-content-between header">
                     <div class="balaces">
                          <div id="balance">#230,630.50</div>
                     </div>
                     <div class="buttons">
-                         <button type="button" class="add"><i class="fa fa-plus"></i></button>
-                         <button type="button" class="refresh"><i class="fa fa-refresh"></i></button>
+                         <button type="button" class="add" id="add"><i class="fa fa-plus"></i></button>
+                         <button type="button" class="refresh" id="refresh"><i class="fa fa-refresh"></i></button>
                          <button type="button" class="left"><i class="fa fa-arrow-left"></i></button>
                          <button type="button" class="right"><i class="fa fa-arrow-right"></i></button>
                     </div>
@@ -244,44 +262,14 @@
                     </div>
                     <div class="mt-3 datalist">
                          <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
+                              <div class="col-lg-6 col-md-4 d-flex align-items-center gap-2">
                                    <div class="icon"></div>
                                    <div class="trans-type">Deposit</div>
                               </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
+                              <div class="col-lg-3 col-md-3 text-center mx-auto d-flex justify-content-center align-items-center">
                                    <div class="trans-amount">+20,000</div>
                               </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
-                                   <div class="d-flex align-items-center gap-3">
-                                        <div class="trans-date">15 Jan 2024</div>
-                                        <div class="trans-time">15:26</div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
-                                   <div class="icon"></div>
-                                   <div class="trans-type">Deposit</div>
-                              </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
-                                   <div class="trans-amount">+20,000</div>
-                              </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
-                                   <div class="d-flex align-items-center gap-3">
-                                        <div class="trans-date">15 Jan 2024</div>
-                                        <div class="trans-time">15:26</div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="row each">
-                              <div class="col-lg-6 d-flex align-items-center gap-2">
-                                   <div class="icon"></div>
-                                   <div class="trans-type">Deposit</div>
-                              </div>
-                              <div class="col-lg-3 text-center mx-auto d-flex justify-content-center align-items-center">
-                                   <div class="trans-amount">+20,000</div>
-                              </div>
-                              <div class="col-lg-3 ms-auto d-flex justify-content-end align-items-center">
+                              <div class="col-lg-3 col-md-5 ms-auto d-flex justify-content-end align-items-center">
                                    <div class="d-flex align-items-center gap-3">
                                         <div class="trans-date">15 Jan 2024</div>
                                         <div class="trans-time">15:26</div>
@@ -291,10 +279,48 @@
                     </div>
                </div>
           </div>
-     
+          
+          <div class="sidebar-links bottom-links">
+               <div class="sidebar-link">
+                    <a href="/services.html" class="service link">
+                         <i class="fas fa-clipboard"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="#transactions" class="transaction link">
+                         <i class="fas fa-exchange-alt"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="/index.html" class="home link">
+                         <i class="fas fa-house"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="#orders" class="link">
+                         <i class="fas fa-shopping-cart"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="#deposit" class="deposit link">
+                         <i class="fas fa-wallet"></i>
+                    </a>
+               </div>
+          </div>
      </section>
 
-    
+     <div id="alerting"></div>
+     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </symbol>
+          <symbol id="info-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </symbol>
+          <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </symbol>
+     </svg>
 
      <!-- Bootstrap  -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
