@@ -80,9 +80,87 @@
 
 
      <section class="main">
-          <section id="dashboard">
-               
+          <section id="order">
+               <div class="sidebar-top profiish">
+                    <div class="divpro">
+                         <div class="profile">
+                              <img src="images/4.jpg" alt="logo">
+                         </div>
+                         <div class="profile-name">
+                              <div class="name">Denis Kelvin</div>
+                              <div class="email">example@mail.com</div>
+                         </div>
+                    </div>
+                    <div class="logouts">
+                         <a href="login.html" class="logoutss">
+                              <i class="fas fa-sign-out-alt"></i>
+                         </a>
+                    </div>
+               </div>
+               <div class="d-flex justify-content-between header">
+                    <div class="balaces">
+                         <div id="balance">#230,630.50</div>
+                         <div id="balance-text" class="d-flex gap-3">
+                              <div class="text">Total Balance</div>
+                              <div class="date">As at 15 Jan 2024</div>
+                         </div>
+                    </div>
+               </div>
+               <div class="head my-2">Create an Order</div>
+               <div class="order-body">
+                    <form action="" method="post">
+                         <div class="input-group">
+                              <div class="search">
+                                   <input type="text" class="form-control" id="search-input" placeholder="Search">
+                                   <button class="btn btn-outline-secondary" type="button" id="search"><i class="fa fa-search"></i></button>
+                              </div>
+                         </div>
+                         <div class="input-group">
+                              <label for="category">Category</label>
+                              <select class="form-select" id="category">
+                                   <option value="1">Category 1</option>
+                                   <option value="2">Category 2</option>
+                                   <option value="3">Category 3</option>
+                                   <option value="4">Category 4</option>
+                              </select>
+                         </div>
+                         <div class="input-group">
+                              <label for="service">Service</label>
+                              <select class="form-select" id="service">
+                                   <option value="1">Service 1</option>
+                                   <option value="2">Service 2</option>
+                                   <option value="3">Service 3</option>
+                                   <option value="4">Service 4</option>
+                              </select>
+                         </div>
+                         <div class="input-group">
+                              <label for="descreption">Dscription</label>
+                              <textarea class="form-control" id="descreption" rows="3"></textarea>
+                         </div>
+                         <div class="input-group">
+                              <label for="link">Link</label>
+                              <input type="text" class="form-control" id="link">
+                         </div>
+                         <div class="input-group">
+                              <label for="quantity">Quantity</label>
+                              <input type="number" class="form-control" id="quantity">
+                              <div class="text">Min: 100 - Max: 100</div>
+                         </div>
+                         <div class="input-group">
+                              <label for="speed">Average time</label>
+                              <input class="form-control" readonly="" value="" type="text" id="field-orderform-fields-average_time" disabled="">
+                         </div>
+                         <div class="input-group">
+                              <label for="price">Price</label>
+                              <input class="form-control" readonly="" value="" type="text" id="field-orderform-fields-price" disabled="">
+                         </div>
+                         <button type="submit" id="ordeer">Order Now</button>
+                            
+                    </form>
+               </div>
           </section>
+
+
 
           <section class="sidebar-links bottom-links">
                <div class="sidebar-link">

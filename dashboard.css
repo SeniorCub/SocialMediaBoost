@@ -445,6 +445,74 @@ input::placeholder{
 .profiish{
      display: none;
 }
+#order{
+     form{
+          width: 70%;
+          .input-group{
+               display: flex;
+               flex-direction: column;
+               padding: 0.5rem 0;
+          }
+          .search{
+               width: 50%;
+               margin-left: auto;
+               display: flex;
+               flex-direction: row;
+               background-color: #151520;
+               box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+               border-radius: 10px;
+               input{
+                    background-color: transparent;
+                    border: none;
+               }
+               input:focus{
+                    box-shadow: none;
+                    color: #ddd;
+                    outline: none;
+               }
+               .btn{
+                    background-color: #aaa;
+                    color: #222;
+                    border: none;
+               }
+               .btn:hover{
+                    background-color: #aaa;
+                    color: #222;
+               }
+          }
+          label{
+               font-size: 1.2rem;
+               color: #ddd;
+               font-weight: 600;
+               margin-bottom: 0.3rem;
+          }
+          input, select, textarea{
+               width: 100%;
+               border-radius: 10px;
+               border: none;
+               margin-top: 0rem;
+               background-color: #151520;
+               box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+               color: #ddd;
+          }
+          select{
+               text-indent: 10px;
+          }
+          input:focus, select:focus{
+               box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+               outline: none;
+          }
+          #ordeer{
+               font-weight: bold;
+               color: white;
+               cursor: pointer;
+               border: none;
+               background-color: #0000ff;
+               margin-top: 30px;
+               margin-left: auto;
+          }
+     }
+}
 @media (max-width: 800px){
      .each{
           width: 100%;
