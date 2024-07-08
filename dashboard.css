@@ -1,9 +1,9 @@
 body{
      height: 100vh;
-     overflow: hidden;
      display: grid;
      grid-template-columns: 0.5fr 2fr;
-     background: #242424;
+     background-color: #0b0a12;
+     /* background: #151520; */
      width: 100vw!important;
      overflow-x: hidden;
 }
@@ -12,11 +12,46 @@ img{
      height: 100%;
      object-fit: cover;
 }
+#alerting{
+     position: fixed;
+     right: 0;
+     z-index: 1000000000;
+     top: 10%;
+     .alert{        
+          width: 300px;
+          height: 50px;
+          animation-name: rollin;
+          animation-duration: 0.5s;
+          animation-timing-function: ease;
+          animation-fill-mode: forwards;
+     }
+     svg{
+          width: 20px;
+     }
+     div{
+          font-size: 12px;
+     }
+     .alert-primary{
+          background-color: #2A6DA8;
+     }
+     .alert-danger{
+          background-color: #ff0000;
+     }
+     .alert-success{
+          background-color: #019f01;
+     }
+     .alert-warning{
+          background-color: #ffcc00;
+     }
+}
 .sidebar{
      width: 15rem;
-     background-color: #444;
+     background-color: #0b0a12;
+     /* background: #151520; */
+     border-right: 1px solid rgba(255, 255, 255, 0.147);
      height: 100vh;
      padding-left: 1rem;
+     overflow-y: auto;
      .sidebar-wrapper{
           height: 100%;
           display: flex;
@@ -24,8 +59,8 @@ img{
           justify-content: space-between;
           .sidebar-top{
                padding: 10px 20px;
+               padding-top: 1.5rem;
                display: flex;
-               flex-direction: column;
                gap: 10px;
                .profile{
                     width: 50px;
@@ -59,13 +94,14 @@ img{
                     align-items: center;
                     gap: 10px;
                     padding: 10px;
-                    color: #ddd;
+                    color: #999;
                     text-decoration: none;
                     transition: 0.3s;
                     cursor: pointer;
                     position: relative;
                     &:hover{
-                         background-color: #555;
+                         /* background-color: #555; */
+                         background-color: #151520;
                     }
                     i{
                          padding-left: 1rem;
@@ -73,7 +109,7 @@ img{
                     }
                     span{
                          font-size: 1rem;
-                         font-weight: 600;
+                         /* font-weight: 600; */
                     }
                }
                .active::before{
@@ -91,11 +127,11 @@ img{
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    color: #ddd;
+                    color: #aaa;
                     text-decoration: none;
                     span{
                          font-size: 1.2rem;
-                         font-weight: 600;
+                         /* font-weight: 600; */
                     }
                }
           }
@@ -104,105 +140,45 @@ img{
 .main{
      width: 100%;
      padding: 1rem 2rem;
-     .section{
-          display: none;
-     }
+     overflow-y: auto;
+}
+::-webkit-scrollbar{
+     display: none;
 }
 .header{
-     padding: 1rem 0;
      #balance{
           font-weight: 700;
           font-size: 2rem;
           color: #fff;
      }
-     .buttons{
-          display: flex;
-          gap: 10px;
-          button{
-               background-color: #ddd;
-               border: none;
-               width: 50px;
-               height: 50px;
-               border-radius: 50%;
-               font-size: 1rem;
-          }
-          button:hover{
-               background-color: #0000ff;
-               color: #ddd;
-          }
+     #balance-text{
+          font-size: 1rem;
+          color: #aaa;
      }
 }
-#transactions{
-     .head{
-          /* font-weight: 700; */
-          font-size: 1.5rem;
-          color: #aaa;
-          padding: 1rem 0;
+.buttons{
+     display: flex;
+     gap: 10px;
+     button{
+          background-color: #ddd;
+          border: none;
+          width: 40px!important;
+          height: 40px;
+          border-radius: 50%;
+          font-size: 1rem;
      }
-     .transact{
-          background-color: #444;
-          width: 100%;
-          border-radius: 10px;
-          padding: 0.5rem;
-          .heading{
-               padding: 0 1rem;
-              .text{
-                    font-weight: 700;
-                    font-size: 1rem;
-                    color: #ddd;
-              }
-               .input-group{
-                    background-color: #aaa;
-                    border-radius: 10px;
-                    input{
-                         background-color: transparent;
-                         border: none;
-                    }
-                    input:focus{
-                         box-shadow: none;
-                         outline: none;
-                    }
-               .btn{
-                         background-color: #aaa;
-                         color: #222;
-                         border: none;
-                    }
-                    .btn:hover{
-                         background-color: #aaa;
-                         color: #222;
-                    }
-               }
-          }
-          .datalist{
-               .each{
-                    padding: 0.5rem 0.3rem;
-                    text-align: center;
-                    background-color: transparent;
-                    font-size: 1rem;
-                    margin: 0 auto;
-                    width: 100%;
-                    color: #ddd;
-                    .icon{
-                         width: 50px;
-                         height: 50px;
-                         border-radius: 50%;
-                         background-color: #ddd;
-                    }
-                    .trans-time{
-                         font-size: 0.7rem;
-                    }
-               }
-          }
+     button:hover{
+          background-color: #0000ff;
+          color: #ddd;
      }
 }
 #deposit{
      form{
-          /* background-color: #0000ff; */
-          padding: 2rem 5rem;
-          /* padding-top: 5rem; */
+          padding-top: 7rem;
           border-radius: 10px;
+          width: 70%;
           .inputs{
-               margin-bottom: 3rem;
+               margin-bottom: 2rem;
                label{
                     font-size: 1.2rem;
                     color: #ddd;
@@ -213,16 +189,16 @@ img{
                     padding: 1rem;
                     border-radius: 10px;
                     border: none;
-                    background-color: #ddd;
-                    color: black;
-                    box-shadow: none;
-                    margin-top: 0.5rem;
+                    margin-top: 0rem;
+                    background-color: #151520;
+                    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+                    color: #ddd;
                }
                select{
                     text-indent: 10px;
                }
                input:focus, select:focus{
-                    box-shadow: none;
+                    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
                     outline: none;
                }
           }
@@ -242,7 +218,7 @@ img{
 #profile{
      header{
           padding: 1rem 5rem;
-          padding-bottom: 0;
+          padding-bottom: 1rem;
           .ison{
                background-color: #0000ff;
                padding: 0 0.15rem;
@@ -256,7 +232,8 @@ img{
           }
      }
      form{
-          padding: 2rem 5rem;
+          padding: 2rem 0;
+          padding-bottom: 0;
           .left{
                display: flex;
                flex-direction: column;
@@ -304,7 +281,8 @@ img{
           .right{
                display: flex;
                flex-direction: column;
-               gap: 20px;
+               gap: 10px;
+               width: 40%;
                .inputs{
                     label{
                          font-size: 1.2rem;
@@ -316,8 +294,9 @@ img{
                          border-radius: 10px;
                          height: 40px;
                          border: none;
-                         background-color: #ddd;
-                         color: black;
+                         /* background-color: #ddd; */
+                         background-color: #151520;
+                         color: #999;
                          box-shadow: none;
                     }
                     input:focus{
@@ -328,6 +307,7 @@ img{
                .buttons{
                     display: flex;
                     gap: 10px;
+                    margin-top: 40px;
                     .btn{
                          background-color: #0000ff;
                          color: #ddd;
@@ -352,104 +332,115 @@ img{
           }
      }
 }
-#orders{
-     .head{
-          /* font-weight: 700; */
-          font-size: 1.5rem;
-          color: #aaa;
-          padding: 1rem 0;
-     }
-     .transact{
-          background-color: #444;
-          width: 100%;
-          border-radius: 10px;
-          padding: 0.5rem;
-          .heading{
-               padding: 0 1rem;
-              .text{
-                    font-weight: 700;
-                    font-size: 1rem;
-                    color: #ddd;
-              }
-               .input-group{
-                    background-color: #aaa;
-                    border-radius: 10px;
-                    input{
-                         background-color: transparent;
-                         border: none;
-                    }
-                    input:focus{
-                         box-shadow: none;
-                         outline: none;
-                    }
-               .btn{
-                         background-color: #aaa;
-                         color: #222;
-                         border: none;
-                    }
-                    .btn:hover{
-                         background-color: #aaa;
-                         color: #222;
-                    }
-               }
-          }
-          .datalists{
-               .each{
-                    padding: 0.5rem 1rem;
-                    padding-left: 0.3rem;
-                    text-align: center;
-                    background-color: transparent;
-                    font-size: 1rem;
-                    margin: 0 auto;
-                    width: 100%;
-                    color: #ddd;
-                    .icon{
-                         width: 50px;
-                         height: 50px;
-                         border-radius: 50%;
-                         background-color: #ddd;
-                    }
-                    .trans-time{
-                         font-size: 0.7rem;
-                    }
-               }
-          }
-     }
-}
-#alerting{
-     position: fixed;
-     right: 0;
-     z-index: 1000000000;
-     top: 10%;
-     .alert{        
-          width: 300px;
-          height: 50px;
-          animation-name: rollin;
-          animation-duration: 0.5s;
-          animation-timing-function: ease;
-          animation-fill-mode: forwards;
-     }
-     svg{
-          width: 20px;
-     }
-     div{
-          font-size: 12px;
-     }
-     .alert-primary{
-          background-color: #2A6DA8;
-     }
-     .alert-danger{
-          background-color: #ff0000;
-     }
-     .alert-success{
-          background-color: #019f01;
-     }
-     .alert-warning{
-          background-color: #ffcc00;
-     }
-}
 .bottom-links{
      display: none;
+}
+#dashboard{
+     header{
+          margin: 3rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 30vh;
+          .welcome {
+               font-size: 2.5rem;
+               font-weight: 700;
+               color: #ddd;
+               span{
+                    font-style: italic;
+                    color: #ddd;
+                    border-bottom: 1px solid #0000ff;
+               }
+          }
+     }
+}
+.head{
+     font-size: 1.5rem;
+     color: #aaa;
+     padding: 1rem 0;
+}
+.content{
+     .text{
+          font-size: 1rem;
+          color: #aaa;
+     }
+}
+.transact{
+     background-color: #151520;
+     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+     width: 100%;
+     border-radius: 10px;
+     padding: 0.5rem;
+     .heading{
+          padding: 0 1rem;
+         .text{
+               font-weight: 700;
+               font-size: 1rem;
+               color: #ddd;
+         }
+          .input-group{
+               background-color: #0000ff14;
+               border-radius: 10px;
+               input{
+                    background-color: transparent;
+                    border: none;
+               }
+               input:focus{
+                    box-shadow: none;
+                    color: #ddd;
+                    outline: none;
+               }
+          .btn{
+                    background-color: #aaa;
+                    color: #222;
+                    border: none;
+               }
+               .btn:hover{
+                    background-color: #aaa;
+                    color: #222;
+               }
+          }
+     }
+     .datalist, .datalists{
+          .each{
+               padding: 0.5rem 0.3rem;
+               text-align: center;
+               background-color: transparent;
+               font-size: 1rem;
+               margin: 0 auto;
+               width: 100%;
+               color: #ddd;
+               .icon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #ddd;
+               }
+               .trans-time{
+                    font-size: 0.7rem;
+               }
+          }
+     }
+}
+.card{
+     background-color: #151520;
+     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.237);
+     color: #ddd;
+     .card-body{
+          padding: 1rem;
+          .icon{
+               font-size: 3rem;
+               color: #0000ff;
+               right: 0;
+               top: -50%;
+          }
+          .text{
+               font-size: 1.5rem;
+          }
+     }
+}
+input::placeholder{
+     color: #ddd;
 }
 .profiish{
      display: none;
@@ -462,34 +453,28 @@ img{
                height: 30px!important;
           }
      }
-     #transactions {
-          & .transact {
-          & .heading {
-               .input-group {
-                    background-color: #aaa;
-                    border-radius: 10px;
-                    width: 70%;
-                    float: right;
-               }
-          }
-          }
-     }
-     #orders {
-          & .transact {
-          & .heading {
-               .input-group {
-                    background-color: #aaa;
-                    border-radius: 10px;
-                    width: 70%;
-                    float: right;
-               }
-          }
+     .transact {
+          .input-group {
+               border-radius: 10px;
+               width: 70%;
+               float: right;
           }
      }
      #deposit {
           form {
                margin-top: 2rem;
               padding: 0!important;
+          }
+     }
+     .left{
+          margin-bottom: 30px;
+     }
+     .right{
+          width: 100%!important;
+     }
+     #profile {
+          header {
+              padding: 0;
           }
      }
 }
@@ -528,7 +513,7 @@ img{
       }
       .bottom-links{
           padding: 1rem 2rem;
-          background-color: #555;
+          background-color: #000000;
           position: fixed;
           left: 0;
           bottom: -1px;
@@ -538,19 +523,12 @@ img{
           i{
                color: #ddd;
           }
-          .sidebar-link{
-               position: relative;
-          }
-          .active::before{
-               content: "";
-            background-color: #0000ff;
-            position: absolute;
-            z-index: -1;
-            width: 50px;
-            height: 50px;
-            top: -60%;
-            left: -80%;
-            border-radius: 50%;
+          .active{
+               i{
+                   color: #0000ff;
+                   transform: translateY(-2px);
+                   font-size: 1.5rem;
+               }
           }
       }
       .header{
@@ -563,10 +541,11 @@ img{
           .buttons{
                display: flex;
                gap: 10px;
+               margin-top: 0.5rem;
                button{
                     background-color: #ddd;
                     border: none;
-                    width: 30px;
+                    width: 30px!important;
                     height: 30px;
                     border-radius: 50%;
                     font-size: 1rem;
@@ -574,6 +553,18 @@ img{
                button:hover{
                     background-color: #0000ff;
                     color: #ddd;
+               }
+          }
+     }
+     header{
+          flex-direction: column;
+          height: max-content!important;
+          .welcome{
+               font-size: 1.5rem!important;
+          }
+          .images{
+               dotlottie-player{
+                    width: 100%!important;
                }
           }
      }
@@ -626,13 +617,22 @@ img{
      .col-md-3{
           width: 20%;
      }
-     .icon{
-          display: none;
-     }
      .col-md-5{
           width: 40%;
      }
      .trans-date{
           font-size: 0.8rem;
+     }
+     #balance-text{
+          font-size: 0.8rem!important;
+     }
+     .buttons{
+          display: grid!important;
+          grid-template-columns: 1fr 1fr;
+     }
+     .datalist, .datalists{
+          .icon{
+               display: none;
+          }
      }
 }

@@ -9,6 +9,8 @@
      <link rel="stylesheet" href="both/bootstrap-5.3.3-dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="both/fontawesome-free-6.4.2-web/css/all.css">
      <!-- Lottie Player -->
+      <!-- dotlottie -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
      <link rel="shortcut icon" href="images/eboosterhubs.png" type="image/x-icon">
      <!-- Custom CSS -->
      <!-- <link rel="stylesheet" href="style.css"> -->
@@ -29,39 +31,39 @@
                </div>
                <div class="sidebar-links">
                     <div class="sidebar-link">
-                         <a href="/" class="home link">
+                         <a href="#" class="active link">
                               <i class="fas fa-house"></i>
-                              <span>Home</span>
+                              <span>Dashboard</span>
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#profile" class="link">
-                              <i class="fas fa-user"></i>
-                              <span>Profile</span>
-                         </a>
-                    </div>
-                    <div class="sidebar-link">
-                         <a href="/services.html" class="service link">
+                         <a href="/order.html" class="service link">
                               <i class="fas fa-clipboard"></i>
-                              <span>Services</span>
+                              <span>Create Order</span>
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#transactions" class="transaction link">
+                         <a href="/transactions.html" class="transaction link">
                               <i class="fas fa-exchange-alt"></i>
                               <span>Transactions</span>
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#orders" class="link">
+                         <a href="/allOrders.html" class="link">
                               <i class="fas fa-shopping-cart"></i>
                               <span>Orders</span>
                          </a>
                     </div>
                     <div class="sidebar-link">
-                         <a href="#deposit" class="deposit link">
+                         <a href="/deposit.html" class="deposit link">
                               <i class="fas fa-wallet"></i>
                               <span>Deposit</span>
+                         </a>
+                    </div>
+                    <div class="sidebar-link">
+                         <a href="/profile.html" class="link">
+                              <i class="fas fa-user"></i>
+                              <span>Profile</span>
                          </a>
                     </div>
                </div>
@@ -78,8 +80,88 @@
 
 
      <section class="main">
+          <section id="dashboard">
+               <div class="d-flex justify-content-between header">
+                    <div class="balaces">
+                         <div id="balance">#230,630.50</div>
+                         <div id="balance-text" class="d-flex gap-3">
+                              <div class="text">Total Balance</div>
+                              <div class="date">As at 15 Jan 2024</div>
+                         </div>
+                    </div>
+                    <div class="buttons">
+                         <button type="button" class="add" id="addOrder"><i class="fa fa-plus"></i></button>
+                         <button type="button" class="refresh" id="refreshOrder"><i class="fa fa-refresh"></i></button>
+                    </div>
+               </div>    
+
+               <header>
+                    <div class="welcome">
+                         Welcome back, <span>Denis Kelvin</span><br> What can we help you with?
+                    </div>
+                    <div class="images">
+                         <dotlottie-player src="https://lottie.host/cc8dbffc-10fb-4872-ad02-c6ab31360a35/Ds7plr4VBf.lottie" background="transparent" speed="1" style="width: 400px;" loop autoplay></dotlottie-player>
+                    </div>
+               </header>
+               
+               <div class="createOrde">
+                    <div class="d-flex justify-content-between align-items-center create">
+                         <div class="head">Create Order</div>
+                    </div>
+                    <div class="row g-5 py-5">
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                        <div class="text">Instagram</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-youtube"></i></div>
+                                        <div class="text">Youtube</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-snapchat"></i></div>
+                                        <div class="text">Snapchat</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                        <div class="text">Instagram</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-youtube"></i></div>
+                                        <div class="text">Youtube</div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6">
+                              <div class="card">
+                                   <div class="position-relative card-body">
+                                        <div class="position-absolute icon"><i class="fa fa-snapchat"></i></div>
+                                        <div class="text">Snapchat</div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
      
-          <section id="profile" class="section profile">
+          <!-- <section id="profile" class="section profile">
                <header>
                     <div class="head"><span class="ison"></span>Edit Profile</div>
                </header>
@@ -196,12 +278,6 @@
                     <div class="balaces">
                          <div id="balance">#230,630.50</div>
                     </div>
-                    <!-- <div class="buttons">
-                         <button type="button" class="add"><i class="fa fa-plus"></i></button>
-                         <button type="button" class="refresh"><i class="fa fa-refresh"></i></button>
-                         <button type="button" class="left"><i class="fa fa-arrow-left"></i></button>
-                         <button type="button" class="right"><i class="fa fa-arrow-right"></i></button>
-                    </div> -->
                </div>
                <form action="">
                     <div class="inputs">
@@ -221,7 +297,7 @@
                </form>
           </section>
 
-          <div class="section transactions" id="transactions">
+          <section class="section transactions" id="transactions">
                <div class="sidebar-top profiish">
                     <div class="divpro">
                          <div class="profile">
@@ -278,35 +354,39 @@
                          </div>
                     </div>
                </div>
-          </div>
-          
-          <div class="sidebar-links bottom-links">
+          </section> -->
+          <section class="sidebar-links bottom-links">
                <div class="sidebar-link">
-                    <a href="/services.html" class="service link">
-                         <i class="fas fa-clipboard"></i>
-                    </a>
-               </div>
-               <div class="sidebar-link">
-                    <a href="#transactions" class="transaction link">
-                         <i class="fas fa-exchange-alt"></i>
-                    </a>
-               </div>
-               <div class="sidebar-link">
-                    <a href="/index.html" class="home link">
+                    <a href="#" class="active link">
                          <i class="fas fa-house"></i>
                     </a>
                </div>
                <div class="sidebar-link">
-                    <a href="#orders" class="link">
+                    <a href="/order.html" class="service link">
+                         <i class="fas fa-clipboard"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="/transactions.html" class="transaction link">
+                         <i class="fas fa-exchange-alt"></i>
+                    </a>
+               </div>
+               <div class="sidebar-link">
+                    <a href="/allOrders.html" class="link">
                          <i class="fas fa-shopping-cart"></i>
                     </a>
                </div>
                <div class="sidebar-link">
-                    <a href="#deposit" class="deposit link">
+                    <a href="/deposit.html" class="link">
                          <i class="fas fa-wallet"></i>
                     </a>
                </div>
-          </div>
+               <div class="sidebar-link">
+                    <a href="/profile.html" class="link">
+                         <i class="fas fa-user"></i>
+                    </a>
+               </div>
+          </section>
      </section>
 
      <div id="alerting"></div>
