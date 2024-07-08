@@ -509,7 +509,9 @@ input::placeholder{
                border: none;
                background-color: #0000ff;
                margin-top: 30px;
-               margin-left: auto;
+               margin-left: auto;       
+               padding: 1rem 1.5rem;
+               border-radius: 30px;
           }
      }
 }
@@ -543,6 +545,11 @@ input::placeholder{
      #profile {
           header {
               padding: 0;
+          }
+     }
+     #order {
+          form {
+              width: 100%;
           }
      }
 }
