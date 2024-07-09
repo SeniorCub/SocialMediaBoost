@@ -476,7 +476,7 @@ img{
 input::placeholder{
      color: #ddd;
 }
-.profiish{
+.profiish, .lOGO, .profilee{
      display: none;
 }
 #order{
@@ -547,47 +547,12 @@ input::placeholder{
                padding: 1rem 1.5rem;
                border-radius: 30px;
           }
-     }
-}
-@media (max-width: 800px){
-     .each{
-          width: 100%;
-          .icon{
-               width: 30px!important;
-               height: 30px!important;
-          }
-     }
-     .transact {
-          .input-group {
-               border-radius: 10px;
-               width: 70%;
-               float: right;
-          }
-     }
-     #deposit {
-          form {
-               margin-top: 2rem;
-              padding: 0!important;
-          }
-     }
-     .left{
-          margin-bottom: 30px;
-     }
-     .right{
-          width: 100%!important;
-     }
-     #profile {
-          header {
-              padding: 0;
-          }
-     }
-     #order {
-          form {
-              width: 100%;
+          .text{
+               color: #999;
           }
      }
 }
-@media (max-width: 450px){
+@media (min-width: 300px) and (max-width: 800px){
      body{
           grid-template-columns: 1fr;
           height: max-content;
@@ -736,6 +701,14 @@ input::placeholder{
                }
           }
      }
+     .lOGO{
+          opacity: .05;
+          top: -22%;
+          left: -26%;
+          width: 150vw;
+          height: 50vh;
+          z-index: -1;
+     }
      .col-md-4{
           width: 30%;
      }
@@ -758,6 +731,11 @@ input::placeholder{
      .datalist, .datalists{
           .icon{
                display: none;
+          }
+     }
+     #order{
+          form{
+               width: 100%;
           }
      }
 }
