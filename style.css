@@ -139,92 +139,70 @@ nav{
      }
 }
 #services{
-     padding: 10vw 0;
-     .img{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          border-radius: 25px!important;
-          img{
-               width: 100%;
-               border-radius: 25px!important;
-               height: 100%;
-               object-fit: cover;
-          }
-     }
-     .textss{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+     padding: 2vw 0;
+     .heading{
           h1{
+               color: #ccc;
                font-size: 3rem;
-               font-weight: 600;
-               margin: -10px 0;
           }
           h6{
-               font-size: 2.5rem;
-               margin-left: 15px;
-               margin-top: 60px;
-               font-weight: 200;
+               color: #aaa;
+               font-size: 1.5rem;
           }
-          .service{
-               display: grid;
-               grid-template-columns: repeat(3, 1fr);
-               row-gap: 10px;
-               .item{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .icon{
-                         font-size: 3.5rem;
-                         color: var(--secondary-color);
-                         display: flex;
-                         justify-content: center;
-                         align-items: center;
-                         width: 100%;
-                         height: 150px;
-                         .fa, .fab{
-                              border-radius: 25px!important;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                              height: 100%;
-                              width: 150px;
-                         }
-                         .fa-youtube{
-                              background-color: #ff0000;
-                         }
-                         .fa-instagram{
-                              background-color: #c32aa3;
-                         }
-                         .fa-facebook{
-                              background-color: #1877f2;
-                         }
-                         .fa-twitter{
-                              background-color: #1da1f2;
-                         }
-                         .fa-linkedin{
-                              background-color: #0a66c2;
-                         }
-                         .fa-tiktok{
-                              background-color: #ee1d52;
-                         }
-                    }
-                    .icon:hover{
-                         animation: echo 5s infinite;
-                    }
-                    .text{
-                         margin: 10px 0;
-                         font-size: 1rem;
-                         color: #ccc;                    
-                    }
+     }
+     .createOrde{
+          overflow-x: scroll;
+     }
+     .cards{
+          display: flex;
+          width: max-content;
+          gap: 20px;
+          .card{
+               width: 50vw;
+               height: 50vh;
+          }
+          .icon{
+               top: 2%;
+               right: 2%;
+               i{
+                    font-size: 10rem;
+                    color: #ffffff8e;
                }
           }
+          .text{
+               font-size: 5rem;
+               color: #fff;
+               font-weight: 600;
+               z-index: 10;
+               letter-spacing: 1px;
+               margin-top: 10rem;
+          }
+     }
+     .youtube{
+          background-color: #ff0000;
+     }
+     .instagram{
+          background-color: #c32aa3;
+     }
+     .facebook{
+          background-color: #1877f2;
+     }
+     .twitter{
+          background-color: #1da1f2;
+     }
+     .linkedin{
+          background-color: #0a66c2;
+     }
+     .tiktok{
+          background-color: #ee1d52;
+     }
+     ::-webkit-scrollbar{
+          display: none;
      }
 }
 #product-features{
      padding: 10vw 0;
+     padding-bottom: 0;
      h1{
           color: #ccc;
           font-size: 3rem;
@@ -255,6 +233,7 @@ nav{
 }
 #how-it-works{
      padding: 10vw 0;
+     padding-bottom: 0;
      h1{
           color: #ccc;
           font-size: 3rem;
@@ -289,6 +268,7 @@ nav{
 }
 #social {
      padding: 10vw 0;
+     padding-bottom: 0;
      background-color: #242424;
      display: flex;
      justify-content: center;
@@ -359,6 +339,7 @@ nav{
 }
 #why{
      padding: 10vw 0;
+     padding-bottom: 0;
      h1{
           color: #ccc;
           font-size: 3rem;
@@ -398,6 +379,7 @@ nav{
 }
 #faqs{
      padding: 10vw 0;
+     padding-bottom: 0;
      .text{
           text-align: left!important;
           color: #ccc;
@@ -448,6 +430,7 @@ nav{
 }
 #testimonials{
      padding: 10vw 0;
+     padding-bottom: 0;
      h1{
           color: #ccc;
           font-size: 3rem;
@@ -598,32 +581,39 @@ footer{
               }
           }
       }
-     #services{
-           .img{
-                display: none!important;
-           }
-           .textss{
-                h1{
-                     margin-left: 20px;
-                     font-size: 2rem;
-                }
-                h6{
-                     margin-left: 20px;
-                     font-size: 1.5rem;
-                }
-                .service {
-                     grid-template-columns: repeat(3, 1fr) !important;
-                     .item{
-                          .icon{
-                               font-size: 2.5rem;
-                          }
-                          .text{
-                               font-size: 1.2rem;
-                          }
-                     }
-                }
-           }
-      }
+      #services {
+          padding: 1rem;
+          .heading{
+               h1{
+                    font-size: 2rem;
+               }
+               h6{
+                    font-size: 1.5rem;
+               }
+          }
+          .cards {
+               .card {
+                    width: 10rem!important;
+                    height: 8rem;
+                    .icon{
+                         i{
+                              font-size: 4rem;
+                         }
+                    }
+                    .text {
+                         font-size: 1.2rem;
+                         color: #fff;
+                         font-weight: 600;
+                         z-index: 10;
+                         letter-spacing: 1px;
+                         margin-top: 4rem;
+                    }
+               }
+          }
+          ::-webkit-scrollbar{
+               display: none;
+          }
+     }
       #social {
           width: 100vw;
           .title {
@@ -823,37 +813,6 @@ footer{
              p {
                  font-size: 1rem!important;
                  width: 90%;
-             }
-         }
-     }
-     #services {
-         .img {
-             display: none!important;
-         }
-         .textss {
-             h1 {
-                 margin-left: 20px;
-                 font-size: 2rem;
-             }
-             h6 {
-                 margin-left: 20px;
-                 font-size: 1.5rem;
-             }
-             .service {
-                 grid-template-columns: repeat(2, 1fr)!important;
-                 row-gap: 0!important;
-                 margin-left: 10px;
-                 .item {
-                     height: 80%!important;
-                     .icon {
-                         font-size: 2.5rem;
-                         width: 80%!important;
-                     }
-                     .text {
-                         font-size: 1.2rem;
-                         margin: 0!important;
-                     }
-                 }
              }
          }
      }
