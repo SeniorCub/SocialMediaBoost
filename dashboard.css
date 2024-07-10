@@ -387,6 +387,39 @@ img{
           text-decoration: none;
           color: #999;
      }
+     .addmoney {
+          padding: 0px 10px;
+          border-radius: 20px;
+          background-color: #0000ff5a;
+          color: white;
+          border: none;
+          font-size: 700;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+        .addmoney:hover {
+          background-color: whitesmoke;
+          color: #0000ff5a;
+        }
+        .plussign {
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .mainTop{
+          margin-bottom: 1rem;
+          .message{
+               font-size: 1.5rem;
+               color: #ddd;
+               font-weight: 600;
+          }
+        }
 }
 .head{
      font-size: 1.5rem;
@@ -478,6 +511,13 @@ input::placeholder{
 }
 .profiish, .lOGO, .profilee{
      display: none;
+}
+.heading{
+     .text{
+          font-weight: 700;
+          font-size: 1rem;
+          color: #ddd;
+     }
 }
 #order{
      form{
@@ -695,10 +735,11 @@ input::placeholder{
                     }
                }
           }
-          .profile{
+          .profilee{
                width: 50px;
                height: 50px;
                border-radius: 50%;
+               display: block;
                img{
                     width: 100%;
                     height: 100%;
@@ -757,5 +798,12 @@ input::placeholder{
                     }
               }
           }
+      }
+      .each, .trans-type, .trans-amount, .trans-date, .trans-time{
+          font-size: 1rem!important;
+      }
+      .dates{
+          flex-direction: column;
+          gap: 0px !important;
       }
 }

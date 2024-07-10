@@ -68,6 +68,7 @@ nav{
      background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)),url(images/4-min.jpg);
      background-size: cover;
      background-position: top;
+     background-repeat: no-repeat;
      .container{
           .text{
                width: 80%;
@@ -482,7 +483,7 @@ footer{
      }
      #footer{
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: 1fr 2fr 1fr;
           gap: 50px;
           padding-bottom: 5vw;
           .one{
@@ -514,6 +515,10 @@ footer{
                }
           }
      }
+     .middles{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
      .subscribe-forms{
           h1{
                font-size: 0.7rem;
@@ -585,11 +590,11 @@ footer{
               height: 75vh!important;
               padding: 0 10px;
               h1 {
-                  font-size: 1.5rem!important;
+                  font-size: 2rem!important;
               }
               p {
-                  font-size: 0.8rem!important;
-                  width: 90%;
+                  font-size: 1rem!important;
+                  width: 90%!important;
               }
           }
       }
@@ -705,7 +710,7 @@ footer{
                               }
                          }
                          .story{
-                              font-size: 0.5rem;
+                              font-size: 1rem;
                          }
                     }
                     .two{
@@ -757,6 +762,39 @@ footer{
       .col-6 {
           width: 100%;
       }
+      .nav2{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .navbar-brand{
+               text-align: center;
+               h1{
+                    font-size: 2rem;
+                    margin-bottom: 0;
+               }
+          }
+          .collapses .navbar-nav{
+               display: flex;
+               flex-direction: row!important;
+               justify-content: space-between;
+               gap: 50px;
+               align-items: center;
+          }
+          .collapses{
+               overflow-x: hidden;
+               width: 100vw;
+               .navbar-nav{
+                    overflow-x: scroll;
+                    padding: 0 20px;
+                    /* gap: 50px!important; */
+                    /* justify-content: center; */
+               }
+               ::-webkit-scrollbar{
+                    display: none;
+               }
+          }
+      }
 }
 @media (min-width: 300px) and (max-width: 750px) {
      .container {
@@ -776,14 +814,14 @@ footer{
      #hero {
          height: max-content!important;
          .text {
-             width: 100vw;
+             width: 100vw!important;
              height: 75vh!important;
              padding: 0 10px;
              h1 {
                  font-size: 1.5rem!important;
              }
              p {
-                 font-size: 0.8rem!important;
+                 font-size: 1rem!important;
                  width: 90%;
              }
          }
@@ -852,6 +890,7 @@ footer{
                  }
                  .text {
                      font-size: 1rem;
+                     text-align: center;
                  }
              }
          }
@@ -905,7 +944,7 @@ footer{
                      }
                  }
                  .story {
-                     font-size: 0.5rem;
+                     font-size: 1rem;
                  }
              }
              .two {
@@ -913,16 +952,22 @@ footer{
                  justify-content: center;
                  gap: 20px;
                  font-size: 1rem;
+                 width: 50%;
              }
-             .three, .four {
+             .three {
+               width: 50%;
                  h1 {
-                     font-size: 0.7rem;
+                     font-size: 1rem;
                  }
                  .links {
                      a {
-                         font-size: 0.5rem;
+                         font-size: 1rem;
                      }
                  }
+             }
+             .middles{
+               display: flex;
+               justify-content: center;
              }
          }
          .subscribe-forms {
@@ -947,6 +992,12 @@ footer{
          text-align: center;
          h1 {
              font-size: 2rem!important;
+         }
+         .feature-description{
+          text-align: center!important;
+         }
+         .feature-box{
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
          }
      }
      .col-6 {
