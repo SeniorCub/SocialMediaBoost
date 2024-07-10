@@ -312,7 +312,7 @@ img{
                          background-color: #0000ff;
                          color: #ddd;
                          float: right;
-                         width: 50%;
+                         width: 50%!important;
                          border: none;
                          border-radius: 10px;
                          font-size: 1.2rem;
@@ -577,14 +577,6 @@ input::placeholder{
               }
           }
      }
-     #profile {
-          header{
-               padding: 0;
-          }
-          form {
-              padding: 1rem;
-          }
-      }
       .bottom-links{
           padding: 1rem 2rem;
           background-color: #000000;
@@ -687,6 +679,20 @@ input::placeholder{
           .cards {
                .card {
                     width: 10rem!important;
+                    height: 8rem;
+                    .icon{
+                         i{
+                              font-size: 4rem;
+                         }
+                    }
+                    .text {
+                         font-size: 1.5rem;
+                         color: #fff;
+                         font-weight: 600;
+                         z-index: 10;
+                         letter-spacing: 1px;
+                         margin-top: 4rem;
+                    }
                }
           }
           .profile{
@@ -738,4 +744,18 @@ input::placeholder{
                width: 100%;
           }
      }
+     #profile {
+          header{
+               padding: 0;
+          }
+          form {
+              padding: 1rem;
+              .right{
+                    width: 100%;
+                    #save, #cancel{
+                         width: 100%!important;
+                    }
+              }
+          }
+      }
 }
