@@ -12,10 +12,11 @@
      --black: #000;
 }
 body{
-     background: #242424;
      width: 100vw!important;
      overflow-x: hidden;
      color: var(--secondary-color);
+     background-color: #0b0a12;
+     /* background: #151520; */
 }
 a{
      text-decoration: none;
@@ -62,6 +63,21 @@ nav{
           border: none;
           color: var(--primary-color)!important;
      }
+}
+section{
+     background: linear-gradient();
+     position: relative;
+}
+section::after{
+     content: '';
+     position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #0000ff;
+    filter: blur(100px);
+    left: 0 !important;
+    border-radius: 50%;
+    
 }
 #hero{
      height: 100vh!important;
