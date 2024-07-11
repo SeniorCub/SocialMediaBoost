@@ -27,3 +27,18 @@ position: absolute;
 top: 10px;
 left: 20px;
 }
+@media (max-width: 800px){
+     .form{
+          background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/3.jpg);
+          background-size: cover;
+          background-repeat: no-repeat; 
+          background-position: center;
+          .ams{
+               backdrop-filter: blur(10px);
+               /* background-color: rgba(0,0,0,0.5); */
+               padding: 2rem 0;
+               padding-top: 20vh;
+               height: 90%;
+          }
+     }
+}

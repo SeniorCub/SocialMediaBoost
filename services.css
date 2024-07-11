@@ -78,6 +78,7 @@ p {
  .modal-footer {
      border-top: 1px solid var(--primary-color);
  }
+
 @media (max-width: 800px){
      p{
           width: 100%;

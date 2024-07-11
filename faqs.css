@@ -5,7 +5,7 @@ h1{
      margin-bottom: 20px;
 }
 section{
-     margin: 50px 0;
+     margin: 50px 0!important;
 }
 .accordion-button {
      background: var(--dark-color);
@@ -28,4 +28,10 @@ section{
      max-width: 100%;
      border: 2px solid var(--primary-color);
      border-radius: 8px;
+}
+section{
+     padding: 0rem 0vw !important;
+}
+section::after{
+     display: none;
 }

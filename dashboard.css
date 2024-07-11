@@ -415,11 +415,20 @@ img{
         .mainTop{
           margin-bottom: 1rem;
           .message{
+               display: flex;
                font-size: 1.5rem;
+               align-items: center;
+               gap: 10px;
+          }
+          .name{
                color: #ddd;
                font-weight: 600;
           }
+        .welcome{
+          font-weight: 200;
+          color: #ddd;
         }
+     }
 }
 .head{
      font-size: 1.5rem;
@@ -746,6 +755,10 @@ input::placeholder{
                     object-fit: cover;
                     border-radius: 50%;
                }
+          }
+          .message{
+               flex-direction: column;
+               align-items: start!important;
           }
      }
      .lOGO{

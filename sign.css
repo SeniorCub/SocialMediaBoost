@@ -133,23 +133,18 @@
                }
           }
      }
-}
-@media (max-width: 800px){
      .form{
-          .text{
-               text-align: right!important;
-               margin-left: auto!important;
-               margin-bottom: 30px;
-               margin-right: 50px;
-               h1{
-                    font-size: 3rem!important;
-               }
-               p{
-                    font-size: 1rem!important;
-               }
+          background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/5.jpg);
+          background-size: cover;
+          background-repeat: no-repeat; 
+          background-position: center;
+          .ams{
+               backdrop-filter: blur(10px);
+               /* background-color: rgba(0,0,0,0.5); */
+               padding: 2rem 0;
+               padding-top: 20vh;
+               height: 90%;
+               width: 100%;
           }
-     }
-     .create{
-          font-size: 0.5rem!important;
      }
 }
