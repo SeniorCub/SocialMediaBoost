@@ -1,21 +1,26 @@
 .container {
      margin: auto;
  }
+ h1{
+     width: 80%;
+ }
  h1, h2 {
-     color: var(--primary-color);
+     color: #fff;
      text-align: center;
      margin: 20px 0;
  }
  h2 {
      margin-top: 10px;
-     font-size: 1.5em;
+     font-size: 2em;
  }
  .section {
-     margin: 10px 0;
-     padding: 20px;
-     background: var(--dark-color);
-     border-radius: 10px;
+     margin-top: 30px;
      margin-bottom: 50px;
+     background: linear-gradient(145deg,#000086, #121262, #010152, #1b1b74);
+     border: 5px solid #0a66c263;
+     border-radius: 20px;
+    /* padding: 20px; */
+    padding: 2rem 4rem;
  }
  .section ul {
      padding-left: 20px;

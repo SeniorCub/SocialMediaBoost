@@ -139,7 +139,7 @@ img{
 }
 .main{
      width: 100%;
-     padding: 1rem 2rem;
+     padding: 2rem 2rem;
      overflow-y: auto;
 }
 ::-webkit-scrollbar{
@@ -819,4 +819,7 @@ input::placeholder{
           flex-direction: column;
           gap: 0px !important;
       }
+      .prfi{
+          height: 300px!important;
+     }
 }

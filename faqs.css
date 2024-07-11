@@ -1,15 +1,20 @@
 h1{
-     color: var(--primary-color);
-     font-size: 3rem;
+     color: #fff;
      text-align: center;
-     margin-bottom: 20px;
 }
 section{
      margin: 50px 0!important;
 }
+.accordion{
+     --bs-accordion-border-color: #ffffff00;
+     --bs-accordion-bg: #ffffff00;
+     --bs-accordion-border-width: 0px;
+     --bs-accordion-border-radius: 25px!important;
+}
 .accordion-button {
-     background: var(--dark-color);
      color: var(--secondary-color);
+     background: linear-gradient(145deg,#000086, #121262, #010152, #1b1b74);
+      border: 5px solid #0a66c263;
 }
 .accordion-button:not(.collapsed) {
      color: var(--secondary-color);
@@ -33,5 +38,6 @@ section{
      padding: 0rem 0vw !important;
 }
 section::after{
-     display: none;
+     z-index: -3;
+     opacity: 0.3;
 }
