@@ -10,6 +10,7 @@
      <link rel="stylesheet" href="./both/fontawesome-free-6.4.2-web/css/all.css">
      <!-- Lottie Player -->
      <link rel="shortcut icon" href="images/eboosterhubs.png" type="image/x-icon">
+     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
      <!-- Custom CSS -->
      <link rel="stylesheet" href="./style.css">
 </head>
@@ -46,14 +47,29 @@
                </div>
           </nav>
      
-          <div class="container">
-               <div class="text">
-                    <div class="d-flex gap-1 flex-column">
-                         <h1>Elevate Your Social Presence</h1>
-                         <p>Boost your online visibility and engagement with EboosterHub's premium social media marketing services. Grow your follower base, increase interactions, and enhance your brand's online presence with our advanced SMM solutions.</p>
+          <div class="container h-100 ">
+              <div class="row h-100  align-items-center py-5">
+               <div class="col col-lg-6">
+                    <div class="">
+                         <div class="d-flex gap-1 flex-column">
+                              <h1>Elevate Your Social Presence</h1>
+                              <p>Boost your online visibility and engagement with EboosterHub's premium social media marketing services.</p>
+                         </div>
+                       <div class="pt-4"> 
+                         <a class="swipe">Get Started <span class="containerr"><svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></span> </a>
+                       </div>
                     </div>
-                    <a class="swipe">Get Started <span class="containerr"><svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></span> </a>
                </div>
+               <div class="col col-lg-6 d-flex justify-content-end">
+                    <div class="h-box overflow-hidden rounded-4">
+                         <div class="overflow-hidden " >
+                              <img src="images/rocket-launching-with-smoke-likes-social-media-icons-marketing-boost-concept_3482-9672.avif" alt="">
+                         </div>
+
+                    </div>
+
+               </div>
+              </div>
           </div>
      </section>
 
@@ -111,29 +127,41 @@
           <div class="row">
               <div class="col-md-4 mb-4">
                     <div class="feature-box p-4">
-                         <div class="feature-image mb-3">
-                              <lottie-player src="https://lottie.host/a430a153-3584-494a-8560-9d5bb895fe6e/Ut0WnX5c8I.json" background="##fff" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                         <div class="feature-head">
+                              <div class="feature-image mb-3">
+                                   <lottie-player src="https://lottie.host/a430a153-3584-494a-8560-9d5bb895fe6e/Ut0WnX5c8I.json" background="##fff" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                              </div>
+                              <div class="feature-text">
+                                   <h3 class="feature-title">High Performance</h3>
+                              </div>
                          </div>
-                         <h3 class="feature-title">High Performance</h3>
                          <p class="feature-description">Experience unparalleled performance, ensuring your social media profiles capture and maintain audience engagement.</p>
                     </div>
               </div>
               <div class="col-md-4 mb-4">
                   <div class="feature-box p-4">
+                    <div class="feature-head">
                       <div class="feature-image mb-3">
                          <lottie-player src="https://lottie.host/59e48e1c-fa9a-4731-8c9e-69c1fb05e140/80T5xtc48B.json" background="##fff" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
                       </div>
-                      <h3 class="feature-title">User Friendly</h3>
-                      <p class="feature-description">Our platform is designed for ease of use, allowing you to manage your social media campaigns effortlessly, regardless of your expertise level.</p>
+                      <div class="feature-text">
+                         <h3 class="feature-title">User Friendly</h3>
+                    </div>
+                    </div>
+                    <p class="feature-description">Our platform is designed for ease of use, allowing you to manage your social media campaigns effortlessly, regardless of your expertise level.</p>
                   </div>
               </div>
               <div class="col-md-4 mb-4">
                   <div class="feature-box p-4">
+                    <div class="feature-head">
                       <div class="feature-image mb-3">
                          <lottie-player src="https://lottie.host/050190b2-1e3c-4713-82b6-ac1c3f54e06a/AbsoiJIaYj.json" background="##fff" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
                       </div>
+                    <div class="feature-text">
                       <h3 class="feature-title">Secure and Reliable</h3>
-                      <p class="feature-description">We prioritize your data security with advanced measures to ensure your information remains protected at all times.</p>
+                    </div>
+                    </div>
+                    <p class="feature-description">We prioritize your data security with advanced measures to ensure your information remains protected at all times.</p>
                   </div>
               </div>
           </div>
@@ -324,7 +352,7 @@
                     </div>
                     <div>
                          <form class="d-flex flex-column gap-3 subscribe-forms">
-                              <h1 class="d-flex gap-3"><i class="fas fa-envelope"></i>Stay up to date on the latest from EboosterHub</h1>
+                              <h4 class="d-flex gap-3"><i class="fas fa-envelope"></i>Stay up to date on the latest from EboosterHub</h4>
                               <div class="subscribe-form">
                                    <input type="email" placeholder="Enter your e-mail address" class="subscribe-input">
                                    <button class="subscribe-btn">Sign Up</button>
