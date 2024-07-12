@@ -403,8 +403,8 @@ img{
           gap: 5px;
         }
         .addmoney:hover {
-          background-color: whitesmoke;
-          color: #0000ff5a;
+          background-color: 0000ff5a;
+          color: #fff;
         }
         .plussign {
           font-size: 1rem;
