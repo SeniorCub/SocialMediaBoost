@@ -84,10 +84,10 @@
                </header>
                <form action="" class="row">
                     <div class="col-lg-6 left">
-                         <div class="prfi"><div class="icon"><i class="fa fa-camera" aria-hidden="true"></i></div><img src="images/4-min.jpg" alt="profile"></div>
+                         <div class="prfi"><div class="icon" onclick="upload()"><i class="fa fa-camera" aria-hidden="true"></i></div><img src="images/4-min.jpg" alt="profile"></div>
                          <div class="uplos">
                               <input type="file" id="file" name="profile" id="profile" class="form-control">
-                              <label for="profile" id="upload" class="form-label"><i class="fa fa-upload" aria-hidden="true"></i>Upload Profile</label>
+                              <label for="profile" id="upload" onclick="upload()" class="form-label"><i class="fa fa-upload" aria-hidden="true"></i>Upload Profile</label>
                          </div>
                     </div>
                     <div class="col-lg-6 right">
@@ -169,6 +169,11 @@
      <script src="https://kit.fontawesome.com/2a49fbdbb8.js" crossorigin="anonymous"></script>
      <!-- Lottie Player -->
      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-     <script src="dashboard.js"></script>
+     <script>
+          function upload() {
+               let input = document.querySelector("#file");
+               input.click();
+          }
+     </script>
 </body>
 </html>
