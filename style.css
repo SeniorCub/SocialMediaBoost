@@ -85,7 +85,7 @@ nav{
      }
      .navbar-toggler{
           border: none;
-          color: var(--primary-color)!important;
+          color: #fff!important;
      }
 }
 section{
@@ -688,7 +688,7 @@ footer{
           padding: 1rem;
           .heading{
                h1{
-                    font-size: 2rem;
+                    font-size: 2.5rem!important;
                }
                h6{
                     font-size: 1.5rem;
@@ -832,6 +832,9 @@ footer{
               grid-template-columns: repeat(4, 1fr);
           }
       #how-it-works {
+          h1{
+               font-size: 3rem!important;
+          }
           .row {
               width: 95%;
               margin: 0 auto;
@@ -840,7 +843,7 @@ footer{
       #product-features {
           text-align: center;
           h1 {
-              font-size: 2rem!important;
+              font-size: 3rem!important;
           }
       }
       .col-6 {
@@ -939,7 +942,7 @@ footer{
      }
      #why {
           h1{
-               font-size: 3rem!important;
+               font-size: 2.5rem!important;
           }
          .reasons {
              grid-template-columns: 1fr;
@@ -963,7 +966,8 @@ footer{
      #faqs {
          .text {
              h1 {
-                 text-align: center!important;
+               font-size: 2.5rem!important;
+               text-align: center!important;
              }
              p {
                  width: 100%!important;
@@ -977,6 +981,10 @@ footer{
          }
      }
      #testimonials {
+          h1{
+               font-size: 2.5rem!important;
+
+          }
          .testimonial-card {
              padding: 10px;
          }
@@ -1047,7 +1055,7 @@ footer{
      #product-features {
          text-align: center;
          h1 {
-             font-size: 2rem!important;
+             font-size: 2.5rem!important;
          }
          .feature-description{
           text-align: center!important;
@@ -1058,5 +1066,15 @@ footer{
      }
      .col-6 {
          width: 100%;
+     }
+     #suscribe {
+          .subscribe-forms {
+              h2 {
+               font-size: 2rem;
+              }
+          }
+     }
+     .subscribe-form {
+          height: max-content!important;
      }
  }
