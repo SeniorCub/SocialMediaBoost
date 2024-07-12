@@ -54,9 +54,12 @@
                }
           }
      }
+     .ams{
+          width: 80%;
+     }
      form{
           padding: 0 30px;
-          width: 80%;
+          width: 100%;
           margin: 0 auto;
           .input{
                margin: 10px 0;
@@ -96,9 +99,10 @@
      position: absolute;
      top: 10px;
      left: 20px;
+     color: #fff;
 }
 /* Small sceen media queary */
-@media (max-width: 800px){
+@media (max-width: 990px){
      .side{
           display: none!important;
      }
@@ -143,7 +147,16 @@
                /* background-color: rgba(0,0,0,0.5); */
                padding: 2rem 0;
                height: 90%;
-               width: 100%;
+            width: 100%;
+            margin: 0 auto;
           }
+          form{
+               width: 70%;
+          }
+     }
+}
+@media screen and (max-width: 450px){
+     form{
+          width: 100%!important;
      }
 }
