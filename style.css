@@ -97,6 +97,7 @@ section::after{
      content: '';
      position: absolute;
     width: 200px;
+    z-index: -2;
     height: 200px;
     background: #0000ff;
     filter: blur(100px);
