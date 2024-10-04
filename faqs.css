@@ -4,6 +4,7 @@ h1{
 }
 section{
      margin: 50px 0!important;
+     padding: 0rem 0vw !important;
 }
 .accordion{
      --bs-accordion-border-color: #ffffff00;
@@ -33,9 +34,6 @@ section{
      max-width: 100%;
      border: 2px solid var(--primary-color);
      border-radius: 8px;
-}
-section{
-     padding: 0rem 0vw !important;
 }
 section::after{
      z-index: -3;

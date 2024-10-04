@@ -734,6 +734,9 @@ footer{
                   width: 100%;
               }
           }
+          .contact-info p {
+               font-size: 12px;
+          }
       }
       #why {
           .reasons {
@@ -820,18 +823,18 @@ footer{
                          font-size: 1rem;
                     }
                }
+     }
+     .subscribe-forms {
+          h1 {
+               font-size: 1rem;
           }
-          .subscribe-forms {
-              h1 {
-                  font-size: 1rem;
-              }
-          }
-          .last {
-              margin-top: 50px;
-              font-size: 0.5rem;
-              width: 100vw;
-              grid-template-columns: repeat(4, 1fr);
-          }
+     }
+     .last {
+          margin-top: 50px;
+          font-size: 0.5rem;
+          width: 100vw;
+          grid-template-columns: repeat(4, 1fr);
+     }
       #how-it-works {
           h1{
                font-size: 3rem!important;
@@ -890,11 +893,6 @@ footer{
      #product-features .row{
           padding: 0 0.5rem;
      }
-     #social {
-          .contact-info p {
-               font-size: 12px;
-          }
-      }
 }
 @media (min-width: 300px) and (max-width: 750px) {
      .container {

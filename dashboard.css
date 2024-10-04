@@ -165,7 +165,7 @@ img{
 }
 .main{
      width: 100%;
-     padding: 2rem 2rem;
+     padding: 2rem;
      overflow-y: auto;
 }
 ::-webkit-scrollbar{
@@ -282,7 +282,6 @@ img{
                     background-color: transparent;
                     color: #ddd;
                     padding: 0.5rem 2rem;
-                    border: none;
                     border-radius: 10px;
                     font-size: 1.2rem;
                     font-weight: 600;
