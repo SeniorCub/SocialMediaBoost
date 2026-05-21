@@ -1,20 +1,23 @@
-.signUp{
+.signUp {
      border-radius: 20px;
      height: 100vh;
-     .mb-3{
-          margin-bottom: 20px!important;
+
+     .mb-3 {
+          margin-bottom: 20px !important;
      }
-     .side{
+
+     .side {
           border-radius: 20px;
-          background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images/5.jpg);
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/5.jpg);
           background-size: cover;
-          background-repeat: no-repeat; 
+          background-repeat: no-repeat;
           background-position: center;
           display: flex;
           justify-content: center;
           align-items: center;
           height: 100vh;
-          .text{
+
+          .text {
                display: flex;
                text-align: center;
                flex-direction: column;
@@ -24,51 +27,61 @@
                font-size: 1.5rem;
                font-weight: 600;
                color: var(--secondary-color);
-               span{
+
+               span {
                     color: var(--primary-color);
                }
           }
      }
-     .form{
+
+     .form {
           height: 100vh;
           display: flex;
           justify-content: center;
           align-items: start;
           flex-direction: column;
-          .text{
+
+          .text {
                display: flex;
                flex-direction: column;
                justify-content: center;
                text-align: left;
                margin-left: 100px;
                margin-bottom: 30px;
-               h1{
+
+               h1 {
                     font-size: 3rem;
                     font-weight: 800;
                     color: var(--primary-color);
                }
-               p{
+
+               p {
                     font-size: 1.5rem;
                     font-weight: 600;
                     color: var(--secondary-color);
                }
           }
      }
-     .ams{
+
+     .ams {
           width: 80%;
      }
-     form{
+
+     form {
           padding: 0 30px;
           width: 100%;
           margin: 0 auto;
-          .input{
+
+          .input {
                margin: 10px 0;
                width: 100%;
-               label{
+
+               label {
                     color: #fff;
                     margin-bottom: 5px;
                }
-               input{
+
+               input {
                     border: none;
                     outline: none;
                     box-shadow: none;
@@ -77,86 +90,103 @@
                     color: #fff;
                }
           }
-          .create{
+
+          .create {
                font-size: 0.7rem;
           }
-          button{
+
+          button {
                padding: 10px 20px;
                background-color: var(--primary-color);
                color: var(--secondary-color);
                border: none;
           }
-          button:hover{
+
+          button:hover {
                border: 1px solid var(--primary-color);
                color: var(--primary-color);
           }
-          #name{
+
+          #name {
                margin-top: 0;
           }
      }
 }
-.back-icon{
+
+.back-icon {
      position: absolute;
      top: 10px;
      left: 20px;
      color: #fff;
 }
+
 /* Small sceen media queary */
-@media (max-width: 990px){
-     .side{
-          display: none!important;
+@media (max-width: 990px) {
+     .side {
+          display: none !important;
      }
-     .signUp{
-          .side{
+
+     .signUp {
+          .side {
                height: 50vh;
-               .text{
-                    h1{
+
+               .text {
+                    h1 {
                          font-size: 2rem;
                     }
-                    p{
+
+                    p {
                          font-size: 1rem;
                     }
                }
           }
-          form{
+
+          form {
                width: 100%;
           }
-          .mb-3{
-               margin-bottom: 5px!important;
+
+          .mb-3 {
+               margin-bottom: 5px !important;
           }
-          label{
+
+          label {
                font-size: .7rem;
           }
-          .d-flex{
-               gap: 10px!important;
+
+          .d-flex {
+               gap: 10px !important;
           }
-          .down{
-               .create{
+
+          .down {
+               .create {
                     font-size: .7rem;
                     width: 40%;
                }
           }
      }
-     .form{
-          background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/5.jpg);
+
+     .form {
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/5.jpg);
           background-size: cover;
-          background-repeat: no-repeat; 
+          background-repeat: no-repeat;
           background-position: center;
-          .ams{
+
+          .ams {
                backdrop-filter: blur(10px);
-               /* background-color: rgba(0,0,0,0.5); */
                padding: 2rem 0;
                height: 90%;
-            width: 100%;
-            margin: 0 auto;
+               width: 100%;
+               margin: 0 auto;
           }
-          form{
+
+          form {
                width: 70%;
           }
      }
 }
-@media screen and (max-width: 450px){
-     form{
-          width: 100%!important;
+
+@media screen and (max-width: 450px) {
+     form {
+          width: 100% !important;
      }
 }
